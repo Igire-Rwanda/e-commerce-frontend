@@ -1,133 +1,114 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:    'Fira Sans', sans-serif;
-}
-.Head{
-    background-color: black;
-    padding: 10px 0;
-    color: white;
-}
-.Head i{
-    margin-right: 10px;
-}
-.Head label{
-    margin-right: 30px;
-    font-size: 13px;
-}
+body{
 
-.Logo h3{
-font-size: 20px;
-padding: .2px;
-padding-bottom:30px ;
-margin-left: 4rem;
-color: black;
-}
 
-.navbar{
-    display: flex;
-    align-items: center;
-    /* background:red; */
-    flex-wrap: wrap;
-    justify-content: space-between;
-    border-top: 3px solid black;
 }
-.Home{
-    font-size: 13px;
-    margin: auto;
-    padding: .5rem;
+.nav{
+ background-color: white;
+ transition-timing-function: ease-in;
+transition: 0.0 ms;
+
 }
 .header{
-    background-color: white;
-}
-.navbars{
-    margin-left: 60rem;
-    padding: 1rem;
-   
-}
-
-.containers {
-    padding-top: 1rem;
-    width: 100%;
-}
-
-.links-container{
-    /* width: 100%; */
+    /* margin: 0 auto; */
     display: flex;
-    color: black;
-   flex-wrap: wrap;
-
-    list-style: none;
-}
-.links-container .link{
-    margin-left: 10rem;
-}
-.links-container .link-item .link{
-    display: flex;
+    /* align-items: center; */
+    padding: 0;
     justify-content: space-between;
-    margin-left: 15rem;
-    font-size: 16px;
-}
-.link{
-    text-transform: capitalize;
+    width: 100%;
+    min-height: 90px;
+    overflow: hidden;
+    position: sticky;
+    
+    }
+    .logo{
     text-decoration: none;
-    color: black;
-}
-.link:hover{
-    transform: .5s;
-    color: rgba(156, 14, 62, 0.808);
-    opacity: .8s;
-}
-.Logo-img img{
-    border-radius: 70%;
-    width:30%;
-    height: 50%;
-    margin-left: 60px;
-
-}
-@media screen and (max-width:390px){
-    .icon  h4{
-        margin-top: 100rem;
-        display: none;
-    }
-    .icon a img{
-        padding-bottom: 1rem;
-        display: none;
-
-    }
-    .Logo-img img{
-        margin-top: 1px;
-        margin-left: 10px;
-    }
-    .link{
-        margin-bottom: 1%;
-        justify-content: space-between;
-        
-    }
-    .links-container .link-item {
-        margin-bottom: 9px;
-        display: flex;
-    }
-    .container{
-        padding: 2px;
-    }
-    .RText{
-        margin-left: 1px;
-    }
-    .RText label{
-        gap: 1px;
-        margin-right: 20px;
-    }
-    .phone i {
-        margin-left: 30px;
-        padding-top: 2px;
-    }
-    .phone label{
-        margin-left: 20px;
-    }
-    .eco{
-        padding-left: 1px;
+    color:black;
+    padding-left: 40px;
     }
     
+    
+    .links{
+     display: flex;
+    padding-right: 30px;
+    }
+    
+    .links ul li{
+    list-style: none;
+    padding: 15px;
+    font-size: 18px;
+    display: inline-block;
+    }
+    .links ul li a{
+        text-decoration: none;
+        color: black;
+      padding-right: 40px;
+      transition: .3s;;
+    
+    }
+    Button{
+   width: 100%;
+    height: 40px;
+  font-size: 30px;
+
+
+
+    }
+
+    .header Button{
+
+font-size: 15px;
+
+    }
+
+    .header Button:hover{
+       background-color:  #CC8032;
+    }
+
+    .phone div{
+        width: 25px;
+        height: 2px;
+        margin: 5px 0px;
+        background: black;
+    }
+
+      .phone{
+        cursor: pointer;
+        display:none;
+        
+    }
+
+    @media screen and (max-width: 768px) {
+        .phone{
+            display:block;
+            position:relative;
+            top:0;
+            padding: 6px;
+            right: 290px;
+
+        }
+
+ .links{ 
+    position: fixed;
+    top:0vh;
+    width: 45%;
+    height: 100vh;
+    background-color: #CC8032;
+    flex-direction: column;
+    transform: translateX(100%);
+    padding: 20px;
+    transition: 0.5s ease-in;
+    right: 0;
+    
+ }
+.links Button{
+    border:none;
+    font-size: 18px;
+    /* padding-right:160px ; */
+
+} 
+.nav_active{
+  transform: translateX(0);
+
 }
+        
+    } 

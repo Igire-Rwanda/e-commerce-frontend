@@ -4,9 +4,14 @@ import Dashbrd from "./Dashbrd/Dashbrd";
 import AdminDashboard from "./Dashbrd/AdminDashbord";
 import Product from "./Dashbrd/Product";
 import Order from "./Dashbrd/oder";
+import Header from "./component/header";
 function App(){
   return(
+    
+
+    <>
 <BrowserRouter>
+
 <Routes>
 <Route exact path='/' element={<Home/>}/>
 <Route  path='/Home' element={<Home/>}/>
@@ -16,6 +21,7 @@ function App(){
 <Route exact path="/order" element={<Order/>}/>
 </Routes>
 </BrowserRouter>
+</>
   )
 }
 export default App;

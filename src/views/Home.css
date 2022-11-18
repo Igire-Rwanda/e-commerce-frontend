@@ -1,0 +1,37 @@
+input{
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.search{
+ text-align: center;
+ 
+
+}
+.search .align{
+    background: black;
+border: none;
+width:  150%;
+position: relative;
+right: 30rem;
+height: 0.1rem;
+margin-top: -10px;
+}
+@media screen and (max-width: 768px) {
+
+    .search .align{
+        display: none;
+    } 
+    
+    .search h1{
+    font-size: 20px;
+     margin-right: 190px;
+
+    }
+
+   .search input{
+        font-size:15px;
+        margin-right: 200px;
+    }
+    
+}
