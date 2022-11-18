@@ -1,0 +1,48 @@
+*{
+    margin: 0%;
+}
+
+.form-container{
+    width: 100%;
+    min-height: 30vh;
+    padding-top: 2%;
+    padding-left: 2%;
+    margin: 0%;
+    margin-right: 0%;
+    
+    
+}
+
+.label{
+    display: block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+    color: black;
+    padding: 5px;
+    font-size: large;
+}
+input{
+    font-size: large;
+    padding: 10px;
+    margin: 2px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 20;
+    font-size: medium;
+    
+}
+
+.form-container button{
+    margin-left: 10px;
+}
+.container{
+    display: flex;
+    margin: 0%;
+  
+    
+}
+ .homepc img{
+    width: 620px;
+    height: 100vh;
+    
+}
