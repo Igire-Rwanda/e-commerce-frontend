@@ -5,9 +5,10 @@
 // import Product from "./Dashbrd/Product";
 // import Order from "./Dashbrd/oder";
 import React from 'react';
+// import { Link } from 'react-router-dom';
 import purses from './images/orange purse.PNG';
 import './App.css';
-
+import ContactUs from "./components/ContactUs.js";
 
 
 function App(){
@@ -20,11 +21,16 @@ function App(){
              <img src={purses} id='img'alt="" />
             </div>
     </div>
-    
+    // <ContactUs/>
+  
     </>
   )
 }
 export default App;
+
+
+
+
 
 
 
