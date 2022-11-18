@@ -1,12 +1,40 @@
-import {BrowserRouter,Route,Routes} from "react-router-dom";
-import Home from "./views/Home";
-import Dashbrd from "./Dashbrd/Dashbrd";
-import AdminDashboard from "./Dashbrd/AdminDashbord";
-import Product from "./Dashbrd/Product";
-import Order from "./Dashbrd/oder";
+// import {BrowserRouter,Route,Routes} from "react-router-dom";
+// import Home from "./views/Home";
+// import Dashbrd from "./Dashbrd/Dashbrd";
+// import AdminDashboard from "./Dashbrd/AdminDashbord";
+// import Product from "./Dashbrd/Product";
+// import Order from "./Dashbrd/oder";
+import React from 'react';
+import purses from './images/orange purse.PNG';
+import './App.css';
+
+
+
 function App(){
   return(
-<BrowserRouter>
+    <>
+    <div className='container'>
+            <div className='info'>Get Offer Up To 50% </div>
+            <div className='line'></div>
+            <div className='imag'>
+             <img src={purses} id='img'alt="" />
+            </div>
+    </div>
+    
+    </>
+  )
+}
+export default App;
+
+
+
+
+
+
+
+
+
+{/* <BrowserRouter>
 <Routes>
 <Route exact path='/' element={<Home/>}/>
 <Route  path='/Home' element={<Home/>}/>
@@ -15,7 +43,4 @@ function App(){
 <Route exact path="/product" element={<Product/>}/>
 <Route exact path="/order" element={<Order/>}/>
 </Routes>
-</BrowserRouter>
-  )
-}
-export default App;
+</BrowserRouter> */}
