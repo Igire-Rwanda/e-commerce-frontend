@@ -2,9 +2,57 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
-body{
+
+.container{
+    width: 90%;
+    background-color: black;
+    height: 27vh;
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+.info{
+    width: 50%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    padding-left: 80px;
+    color: white;
+    padding-top: 15px;
+    
+}
+
+.line{
+    width: 220px;
+    height: 8px;
+    background-color: white;
+    margin-left: 80px;
+    margin-top: 15px;
+    border-radius: 20px;
+}
+
+.imag{
+    background-color: black;
+    width: 160px;
+    height: 100px;
+    margin-left: 900px;
+    margin-top: -30px;
+}
+#img{
+    width: 100%;
+    background-color: black;
+    height: 100px;
+}
+
+.btn-contct{
+    width: 100px;
+    height: 50px;
+    margin-left: 100px;
+}
+
+/* body{
     background-color:#fff ;
     font-family: "poppins",sans-serif;
 }
@@ -36,7 +84,7 @@ body{
    padding-bottom: 20px;
     justify-content: space-between;
     /* margin-left: 11rem; */
-    padding-right:0.5rem;
+   /* padding-right: 0.5rem;
     position: absolute;
     right: 520px;
 }
@@ -109,7 +157,7 @@ body{
 }
 .menu{
     /* background-color: black; */
-    color: red;
+   /* color: red;
     height: 80px;
     display: flex;
     justify-content: start;
@@ -180,7 +228,4 @@ span{
     align-items: center;
     justify-content: center;
     font-size: 3rem;
-}
-
-
-
+}*/
