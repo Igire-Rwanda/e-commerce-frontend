@@ -1,19 +1,23 @@
 import React from "react";
-import  image from "../assets/image/breath.png";
+import image from "../assets/image/breath.png";
 import Header from "../component/header";
 import Footer from "../component/footer";
 import "../component/header.css";
-import "../App.css"
+import "../App.css";
+import Shopproduct from "../component/Shopproduct";
+import home from './home.css';
 
-const Home=()=>{
 
-    return(
+const Home = (props) => {
+
+    return (
         <>
-        <Header/>
-        <h1>lorem in the country are good for others</h1>
-        <img src={image}></img>
+            <h1>OUR PRODUCTS</h1>
+            <Shopproduct data={props.data} />
 
-        <Footer/>
+            <h1 >Featured Products</h1>
+            <Shopproduct data={props.data} />
+            <Footer />
         </>
     )
 }
