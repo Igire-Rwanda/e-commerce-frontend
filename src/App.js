@@ -24,7 +24,8 @@ import {BrowserRouter,Route,Routes} from "react-router-dom";
 import Home from "./views/Home";
 import Dashbrd from "./Dashbrd/Dashbrd";
 import AdminDashboard from "./Dashbrd/AdminDashbord";
-import Product from "./Dashbrd/Product"
+import Product from "./Dashbrd/Product";
+import Signup from "./component/Signup"
 function App(){
   return(
 <BrowserRouter>
@@ -34,6 +35,7 @@ function App(){
 <Route exact path="/Dashbrd" element={<Dashbrd/>}/>
 <Route exact path="/AdminDashbrd" element={<AdminDashboard/>}/>
 <Route exact path="/product" element={<Product/>}/>
+<Route exact path="/Signup" element={<Signup/>}/>
 </Routes>
 </BrowserRouter>
   )
