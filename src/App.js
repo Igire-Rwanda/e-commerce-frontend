@@ -6,24 +6,47 @@
 // import Order from "./Dashbrd/oder";
 import React from 'react';
 // import { Link } from 'react-router-dom';
-import purses from './images/orange purse.PNG';
+// import purses from './images/orange purse.PNG';
 import './App.css';
-import ContactUs from "./components/ContactUs.js";
+
 
 
 function App(){
   return(
-    <>
-    <div className='container'>
+  <>
+  {/* <div className='container'>
             <div className='info'>Get Offer Up To 50% </div>
             <div className='line'></div>
             <div className='imag'>
              <img src={purses} id='img'alt="" />
             </div>
-    </div>
-    // <ContactUs/>
+    </div>  */}
+
+    <div className='container2'>
+      <h1 className='title'>Get In Touch with us</h1>
+            <p className='text'>Ecommerce Rwanda is looking forward to assisting you in any query you may have about your shopping,Payment, order or Delivery, Returns, and Refunds.Please dont't hesitate to contact us during our working times. </p>
+      </div> 
+      <div className='form'>
+        <div className='fname'>
+          <p className='title2'>FirstName</p>
+          <input type='text' placeholder='Enter your FirstName' id='name'></input>
+        </div>
+        <div className='lname'>
+          <p className='title2'>LastName</p>
+          <input type='text' placeholder='Enter your LastName' id='name'></input>
+        </div>
+        <div className='mail'>
+          <p className='title2'>Email</p>
+          <input type='text' placeholder='Enter your Email' id='name'></input>
+        </div>
+        <div className='msg'>
+          <p className='title2'>Message</p>
+          <input type='text' placeholder='' id='mesg'></input>
+        </div>
+        <button className='send'>Send</button>
+      </div>
   
-    </>
+     </>
   )
 }
 export default App;
