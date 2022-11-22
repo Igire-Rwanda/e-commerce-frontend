@@ -122,13 +122,13 @@ export const born = [
   ];
   
   export const annualVehiclesSales = [
-    { year: 2011, USA: 171763, China: 5070 },
-    { year: 2012, USA: 53240, China: 9900 },
-    { year: 2013, USA: 96700, China: 15340 },
-    { year: 2014, USA: 118780, China: 73170 },
-    { year: 2015, USA: 113870, China: 307380 },
-    { year: 2016, USA: 159620, China: 336000 },
-    { year: 2017, USA: 194479, China: 600174 },
+    { year: 2011,Shoes: 171763, Shoes: 5070 },
+    { year: 2012, Shoes: 53240, Shoes: 9900 },
+    { year: 2013, Shoes: 96700, Shoes: 15340 },
+    { year: 2014,Shoes: 118780, Shoes: 73170 },
+    { year: 2015, Shoes: 113870, Shoes: 307380 },
+    { year: 2016, Shoes: 159620, Shoes: 336000 },
+    { year: 2017, Shoes: 194479, Shoes: 600174 },
   ];
   
   export const australianMedals = [
@@ -227,48 +227,46 @@ export const born = [
   ];
   
   export const population = [{
-    state: 'USA', maleyoung: 29.956, malemiddle: 90.354, maleolder: 14.472, femaleyoung: 28.597, femalemiddle: 91.827, femaleolder: 20.362,
+    state: 'shoes', maleyoung: 29.956, malemiddle: 90.354, maleolder: 14.472, femaleyoung: 28.597, femalemiddle: 91.827, femaleolder: 20.362,
   }, {
-    state: 'Brazil', maleyoung: 25.607, malemiddle: 55.793, maleolder: 3.727, femaleyoung: 24.67, femalemiddle: 57.598, femaleolder: 5.462,
+    state: 'Sport', maleyoung: 25.607, malemiddle: 55.793, maleolder: 3.727, femaleyoung: 24.67, femalemiddle: 57.598, femaleolder: 5.462,
   }, {
-    state: 'Russia', maleyoung: 13.493, malemiddle: 48.983, maleolder: 5.802, femaleyoung: 12.971, femalemiddle: 52.14, femaleolder: 12.61,
+    state: 'Electronic', maleyoung: 13.493, malemiddle: 48.983, maleolder: 5.802, femaleyoung: 12.971, femalemiddle: 52.14, femaleolder: 12.61,
   }, {
-    state: 'Japan', maleyoung: 9.575, malemiddle: 43.363, maleolder: 9.024, femaleyoung: 9.105, femalemiddle: 42.98, femaleolder: 12.501,
+    state: 'WomenClothes', maleyoung: 9.575, malemiddle: 43.363, maleolder: 9.024, femaleyoung: 9.105, femalemiddle: 42.98, femaleolder: 12.501,
   }, {
-    state: 'Mexico', maleyoung: 17.306, malemiddle: 30.223, maleolder: 1.927, femaleyoung: 16.632, femalemiddle: 31.868, femaleolder: 2.391,
+    state: 'MenClothes', maleyoung: 17.306, malemiddle: 30.223, maleolder: 1.927, femaleyoung: 16.632, femalemiddle: 31.868, femaleolder: 2.391,
   }, {
-    state: 'Germany', maleyoung: 6.679, malemiddle: 28.638, maleolder: 5.133, femaleyoung: 6.333, femalemiddle: 27.693, femaleolder: 8.318,
-  }, {
-    state: 'United Kindom', maleyoung: 5.816, malemiddle: 19.622, maleolder: 3.864, femaleyoung: 5.519, femalemiddle: 19.228, femaleolder: 5.459,
-  }];
+    state: 'Decorations', maleyoung: 6.679, malemiddle: 28.638, maleolder: 5.133, femaleyoung: 6.333, femalemiddle: 27.693, femaleolder: 8.318,
+  }, ];
   
   export const olimpicMedals = [{
-    country: 'USA',
+    country: 'shoes',
     gold: 36,
     silver: 38,
     bronze: 36,
   }, {
-    country: 'China',
+    country: 'Sport',
     gold: 51,
     silver: 21,
     bronze: 28,
   }, {
-    country: 'Russia',
+    country: 'Electronic',
     gold: 23,
     silver: 21,
     bronze: 28,
   }, {
-    country: 'Britain',
+    country: 'WomenClothes',
     gold: 19,
     silver: 13,
     bronze: 15,
   }, {
-    country: 'Australia',
+    country: 'MenClothes',
     gold: 14,
     silver: 15,
     bronze: 17,
   }, {
-    country: 'Germany',
+    country: 'Decorations',
     gold: 16,
     silver: 10,
     bronze: 15,
@@ -306,18 +304,16 @@ export const born = [
   
   export const energyConsumption = [
     {
-      country: 'USA', hydro: 59.8, oil: 937.6, gas: 582, coal: 564.3, nuclear: 187.9,
+      country: 'shoes', hydro: 59.8, oil: 937.6, gas: 582, coal: 564.3, nuclear: 187.9,
     }, {
-      country: 'China', hydro: 74.2, oil: 308.6, gas: 35.1, coal: 956.9, nuclear: 11.3,
+      country: 'Sport', hydro: 74.2, oil: 308.6, gas: 35.1, coal: 956.9, nuclear: 11.3,
     }, {
-      country: 'Russia', hydro: 40, oil: 128.5, gas: 361.8, coal: 105, nuclear: 32.4,
+      country: 'Electronic', hydro: 40, oil: 128.5, gas: 361.8, coal: 105, nuclear: 32.4,
     }, {
-      country: 'Japan', hydro: 22.6, oil: 241.5, gas: 64.9, coal: 120.8, nuclear: 64.8,
+      country: 'WomenClothes', hydro: 22.6, oil: 241.5, gas: 64.9, coal: 120.8, nuclear: 64.8,
     }, {
-      country: 'India', hydro: 19, oil: 119.3, gas: 28.9, coal: 204.8, nuclear: 3.8,
-    }, {
-      country: 'Germany', hydro: 6.1, oil: 123.6, gas: 77.3, coal: 85.7, nuclear: 37.8,
-    }];
+      country: 'Decoration', hydro: 19, oil: 119.3, gas: 28.9, coal: 204.8, nuclear: 3.8,
+    },];
   
   export const carbonEmmision = [
     {
@@ -452,22 +448,22 @@ export const born = [
   ];
   
   export const ageStructure = [{
-    state: 'Germany',
+    state: 'Shoes',
     young: 6.7,
     middle: 28.6,
     older: 5.1,
   }, {
-    state: 'Japan',
+    state: 'Electronic',
     young: 9.6,
     middle: 43.4,
     older: 9,
   }, {
-    state: 'Russia',
+    state: 'Decorations',
     young: 13.5,
     middle: 49,
     older: 5.8,
   }, {
-    state: 'USA',
+    state: 'Sport',
     young: 30,
     middle: 90.3,
     older: 14.5,

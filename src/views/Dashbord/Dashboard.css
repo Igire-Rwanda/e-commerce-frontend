@@ -156,3 +156,18 @@ bottom: 170px;
     width:80%;
     left: 50px;
 }
+.available{
+    gap: 2rem;
+    font-size: 20px;
+
+}
+.Months{
+    background-color: rgb(211, 133, 146);
+    width: 10%;
+    height: 5vh;
+    color: white;
+    font-size: 20px;
+    border: none;
+    position: relative;
+    left: 5rem;
+}

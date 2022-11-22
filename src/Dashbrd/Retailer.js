@@ -110,20 +110,20 @@ class Demo extends React.PureComponent {
           <ValueAxis />
 
           <LineSeries
-            name="Hydro-electric"
-            valueField="hydro"
+            name="Electricity"
+            valueField="electro"
             argumentField="country"
             seriesComponent={Line}
           />
           <LineSeries
-            name="Oil"
-            valueField="oil"
+            name="decoration"
+            valueField="decoration"
             argumentField="country"
             seriesComponent={Line}
           />
           <LineSeries
-            name="Natural gas"
-            valueField="gas"
+            name="men's Clothes"
+            valueField="men's Clothes"
             argumentField="country"
             seriesComponent={Line}
           />
@@ -134,8 +134,8 @@ class Demo extends React.PureComponent {
             seriesComponent={Line}
           />
           <LineSeries
-            name="Nuclear"
-            valueField="nuclear"
+            name="Shoes"
+            valueField="Shoes"
             argumentField="country"
             seriesComponent={Line}
           />
@@ -149,3 +149,5 @@ class Demo extends React.PureComponent {
 }
 
 export default withStyles(demoStyles, { name: 'Demo' })(Demo);
+
+

@@ -23,7 +23,7 @@ import "../views/Dashbord/Dashboard.css";
 const items = [
   { name: "Dashboard", icon: <PeopleAltIcon sx={{color:"pink"}} />},
   { name: "Product", icon: <ProductionQuantityLimitsIcon />,path:"/product"  },
-  { name: "Order", icon: <FilterFramesIcon /> },
+  { name: "Order", icon: <FilterFramesIcon />,path:"/order"  },
   { name: "Checkout", icon: < BusinessCenterIcon /> },
   { name: "Customer", icon: <PeopleAltIcon /> },
   { name:"setting", icon:<SettingsIcon/>}

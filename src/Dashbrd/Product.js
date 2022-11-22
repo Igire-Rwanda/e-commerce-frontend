@@ -132,11 +132,21 @@ export default function LabTabs() {
                 </div>
               </Card>
             </TabPanel>
-            <TabPanel value="2">Item Two</TabPanel>
+            <TabPanel value="2">
+            <button className='Months' >Months</button>
+            <div className="available">
+        <h4>Purchace <span>2675$</span> </h4>
+        <h4>Available <span>49875$</span> </h4>
+        <h4>Sales Price <span>6535$</span> </h4>
+        <h4>Sales<span>65474$</span> </h4>
+        </div>
+            </TabPanel>
             <TabPanel value="3">Item Three</TabPanel>
           </TabContext>
         </Box>
-        <Chart/>
+        <Chart>
+        </Chart>
+    
       </DashLayout>
     </>
   );

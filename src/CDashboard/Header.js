@@ -65,14 +65,12 @@ export default function Contributions() {
       <Box
         sx={{
           display: "flex",
-          height: "210px",
+          height: "135px",
           width: "95%",
           mt: "24px",
           mx: "auto",
           justifyContent: "space-between",
-          zIndex:"999",
-          top:"0",
-        
+         
         }}
       >
         <Head style={{ backgroundColor: "pink" }} />

@@ -14,7 +14,7 @@ const cardSizeCSS = {
 
 export default function Head1({ style }) {
   return (
-    <Card sx={{ borderRadius: "30px", ...cardSizeCSS, ...style, p: "auto",height:"30vh",gap:"2rem" }}>
+    <Card sx={{ borderRadius: "30px", ...cardSizeCSS, ...style, p: "auto",height:"20vh",gap:"2rem" }}>
       <CardContent sx={cardSizeCSS}>
         <Typography
           sx={{
@@ -38,7 +38,7 @@ export default function Head1({ style }) {
         </Box>
 
         <Typography
-          sx={{ fontSize: "14px", color: "rgba(0, 0, 0)", lineHeight: "24px" }}
+          sx={{ fontSize: "14px", color: "rgba(0, 0, 0)",position:"relative",bottom:"3rem"}}
         >
           30 Members
         </Typography>
@@ -49,8 +49,8 @@ export default function Head1({ style }) {
             position: "absolute",
             left: "150px",
             right: "auto",
-            top: "32px",
-            bottom: "auto",
+            
+            bottom: "30rem",
           }}
         >
         
