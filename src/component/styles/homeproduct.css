@@ -1,0 +1,77 @@
+*{
+    margin:0px;
+    padding:0px;
+
+}
+.cards-box{
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+}
+.cards{
+    width:250px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 1px 1px 1px lightgrey;
+    margin-bottom: 50px;
+    overflow: hidden;
+    transition: all 0.4s;
+      
+}
+.cards:hover{
+    box-shadow: 0 10px 10px 10px lightgrey;
+    cursor:pointer;
+    transform: translate(5px,-10px);
+
+}
+.image-box img{
+    width:200px;
+    height:200px;
+    margin-left: 30px;
+}
+.details p:nth-child(1){
+    font-weight: bold;
+    height: 20px;
+    margin: auto;
+}
+.details p:nth-child(2){
+    font-weight: bold;
+    height: 20px;
+}
+.details h5{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.btn-dd{
+    width: 100px;
+    height: 50px;
+    font-weight: bolder;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 50px;
+    margin-top: 30px;
+    border: none;
+    background-color:  wheat;
+
+
+}
+
+.link-plus{
+color: red;
+width: 300px;
+font-size: larger;
+position: absolute;
+margin-top: 40px;
+
+
+}
+.home-h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

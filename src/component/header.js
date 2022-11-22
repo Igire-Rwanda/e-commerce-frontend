@@ -90,7 +90,7 @@ const Header = ()=>{
           <header className="header">
             <div className="navbar">
                 <div className="Logo-img">
-                  <img src={Logo} alt=""></img>
+                 <Link to = "/"> <img src={Logo} alt=""></img> </Link>
                 </div>
                 <section className="Search" >
                  <Search action="https://www.google.com/search"
@@ -112,20 +112,20 @@ const Header = ()=>{
           </div>           
           
             </div>
-            <ul className="links-container">
+            {/* <ul className="links-container">
               <li className="link-item"><a href="/Home" className="link">Home</a></li>
               <li className="link-item"><a href="#" className="link">Products</a></li>
               <li className="link-item"><a href="#" className="link">Retailer</a></li>
               <li className="link-item"><a href="#" className="link">ContactUs</a></li>
               <li className="link-item"><a href="#" className="link">Shipping</a></li>
-            </ul>
+            </ul> */}
             <>
             <IconContext.Provider value={{color:"rgba(156, 14, 62, 0.808)"}}>
-            <div className="menu">
+            {/* <div className="menu">
               < a to="#" className="Menu-bars">
                 <FaIcons.FaBars onClick={showSidebar}/>
               </a>
-            </div>
+            </div> */}
             <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
               <ul className='nav-menu-items' onClick={showSidebar}>
                 <li className="navbar-toggle">
