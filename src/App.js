@@ -59,6 +59,7 @@ function App() {
           <Route exact path="/AdminDashbrd" element={<AdminDashboard />} />
           <Route exact path="/product" element={<Product />} />
           <Route exact path="/order" element={<Order />} />
+          <Route exact path="/Description" element={<Description />} />
         </Routes>
       </BrowserRouter>
     </>
