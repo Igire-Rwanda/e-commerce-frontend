@@ -6,39 +6,17 @@
 // import Order from "./Dashbrd/oder";
 import React from 'react';
 // import { Link } from 'react-router-dom';
-import purses from './images/orange purse.PNG';
-import './App.css';
+// import purses from './images/orange purse.PNG';
+import Offer from './Offer';
+// import './App.css';
 
 
 
 function App(){
   return(
   <>
-  <div className='container'>
-            <div className='info'>Get Offer Up To 50% </div>
-            <div className='line'></div>
-            <div className='imag'>
-             <img src={purses} id='img'alt="" />
-            </div>
-    </div> 
-    {/* <div className='form1'>
-      <div className='holder'>
-        <div className='fname'>
-          <p className='tit'>Name</p>
-          <input type='text' placeholder='Enter your name' id='namee'></input>
-        </div>
-        <div className='lname'>
-          <p className='tit'>Shipping Address</p>
-          <input type='text' placeholder='shipping address' id='namee'></input>
-        </div>
-        <div className='mail'>
-          <p className='tit'>Total Amount</p>
-          <input type='text' placeholder='total amount' id='namee'></input>
-        </div>
-        </div>
-        </div>
-     */}
-     </>
+  <Offer />
+  </>
   )
 }
 export default App;
