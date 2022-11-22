@@ -1,6 +1,6 @@
 import React from 'react'
 import  './Newitem.css'
-import img from "../assets/image/online.GIF"
+import img from "../assets/image/e-commerce.jpg"
 function Description(){
   return (
     <div className="container">
@@ -11,7 +11,7 @@ function Description(){
 </div>
 
 <form className='form-container'>
-                              <h3>DESCRIPTION</h3>
+                              <h2><b>DESCRIPTION</b></h2>
                     
                         <label className="label">Name</label>
                         <input  type="text" placeholder="title" name="title"  />

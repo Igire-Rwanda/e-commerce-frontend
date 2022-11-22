@@ -3,13 +3,16 @@
 }
 
 .form-container{
-    width: 100%;
-    min-height: 30vh;
-    padding-top: 2%;
-    padding-left: 2%;
-    margin: 0%;
-    margin-right: 0%;
-    
+    width: 110%;
+    min-height: 20vh;
+    padding-top: 5%;
+    padding-left: 80px;
+    background-color: whitesmoke;
+    box-shadow: 0 1px 1px 1px lightgray;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom:10px ;
+
     
 }
 
@@ -20,6 +23,7 @@
     color: black;
     padding: 5px;
     font-size: large;
+    width: 30%;
 }
 input{
     font-size: large;
@@ -38,11 +42,12 @@ input{
 .container{
     display: flex;
     margin: 0%;
-  
+     gap: 40px;
     
 }
  .homepc img{
-    width: 620px;
+    width: 680px;
     height: 100vh;
     
 }
+
