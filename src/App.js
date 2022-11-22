@@ -1,4 +1,5 @@
 import {BrowserRouter,Route,Routes} from "react-router-dom";
+import Shipping from "./views/Shipping";
 import Home from "./views/Home";
 import Dashbrd from "./Dashbrd/Dashbrd";
 import AdminDashboard from "./Dashbrd/AdminDashbord";
@@ -19,6 +20,7 @@ function App(){
 <Route exact path="/AdminDashbrd" element={<AdminDashboard/>}/>
 <Route exact path="/product" element={<Product/>}/>
 <Route exact path="/order" element={<Order/>}/>
+<Route exact path="/Shipping" element={<Shipping/>}/>
 </Routes>
 </BrowserRouter>
 </>

@@ -1,0 +1,44 @@
+h1{
+    text-align: center;
+    font-size:35px 
+}
+
+
+label{
+    margin: 30px;
+}
+
+
+input{
+    width: 60%;
+    height: 5vh;
+    border-radius: 5px;
+    border: none;
+    padding-left: 40px;
+
+    
+    
+}
+
+.btn button{
+    width:200px;
+    border-radius: 10px;
+    background-color:  #CC8032;
+    color: white;
+    text-align: center;
+    border: none;
+    margin-left: 170px;
+
+}
+
+
+.form-Shipping{
+    width: 600px;
+    height:700px;
+    border: 0px solid black;
+    margin: auto;
+    margin-top: 0.5%;
+
+background-color:antiquewhite;
+}
+    
