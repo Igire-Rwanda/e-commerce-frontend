@@ -8,6 +8,7 @@ import React from 'react';
 // import { Link } from 'react-router-dom';
 // import purses from './images/orange purse.PNG';
 import Offer from './Offer';
+import Order from './Order';
 // import './App.css';
 
 
@@ -15,7 +16,8 @@ import Offer from './Offer';
 function App(){
   return(
   <>
-  <Offer />
+  {/* <Offer /> */}
+  <Order />
   </>
   )
 }

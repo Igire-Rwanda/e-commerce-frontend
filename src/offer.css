@@ -6,7 +6,7 @@
     /* box-sizing: border-box; */
 }
 
- .cont {
+ /* .cont {
     width: 90%;
     background-color: black;
     height: 27vh;
@@ -46,7 +46,7 @@
     width: 100%;
     background-color: black;
     height: 100px;
-}
+} */
 
 /*.btn-contct {
     width: 100px;
@@ -79,7 +79,7 @@
     padding-left: 30px;
 } */
 
-/* .form1{
+.form1{
     width: 100%;
     background-color: grey;
     height: 100vh;
@@ -113,7 +113,7 @@
     background-color: black;
     color: white;
     padding-left: 15px;
-} */
+} 
 
 /* #mesg{
     width: 350px;
