@@ -4,7 +4,8 @@ import {Routes,Route} from 'react-router-dom';
 import HomeLayout from "../component/Homelayout";
 import Dashboard from "../views/Dashbord/Dashboard";
 import Dashlayout from "../component/admin/DashLayout";
-import Dashbrd from "../Dashbrd/Dashbrd"
+import Dashbrd from "../Dashbrd/Dashbrd";
+import ContactUs from "../components/ContactUs"
 const index=() =>{
     return (
    <>
