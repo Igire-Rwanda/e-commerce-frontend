@@ -6,7 +6,7 @@
 // import Order from "./Dashbrd/oder";
 import React from 'react';
 // import { Link } from 'react-router-dom';
-// import purses from './images/orange purse.PNG';
+import purses from './images/orange purse.PNG';
 import './App.css';
 
 
@@ -14,15 +14,47 @@ import './App.css';
 function App(){
   return(
   <>
-  {/* <div className='container'>
+  <div className='container'>
             <div className='info'>Get Offer Up To 50% </div>
             <div className='line'></div>
             <div className='imag'>
              <img src={purses} id='img'alt="" />
             </div>
-    </div>  */}
+    </div> 
+    {/* <div className='form1'>
+      <div className='holder'>
+        <div className='fname'>
+          <p className='tit'>Name</p>
+          <input type='text' placeholder='Enter your name' id='namee'></input>
+        </div>
+        <div className='lname'>
+          <p className='tit'>Shipping Address</p>
+          <input type='text' placeholder='shipping address' id='namee'></input>
+        </div>
+        <div className='mail'>
+          <p className='tit'>Total Amount</p>
+          <input type='text' placeholder='total amount' id='namee'></input>
+        </div>
+        </div>
+        </div>
+     */}
+     </>
+  )
+}
+export default App;
 
-    <div className='container2'>
+
+
+
+
+
+
+
+
+
+
+
+{/* <div className='container2'>
       <h1 className='title'>Get In Touch with us</h1>
             <p className='text'>Ecommerce Rwanda is looking forward to assisting you in any query you may have about your shopping,Payment, order or Delivery, Returns, and Refunds.Please dont't hesitate to contact us during our working times. </p>
       </div> 
@@ -45,14 +77,7 @@ function App(){
         </div>
         <button className='send'>Send</button>
       </div>
-  
-     </>
-  )
-}
-export default App;
-
-
-
+   */}
 
 
 

@@ -6,7 +6,7 @@
     /* box-sizing: border-box; */
 }
 
-/* .container {
+ .container {
     width: 90%;
     background-color: black;
     height: 27vh;
@@ -48,65 +48,74 @@
     height: 100px;
 }
 
-.btn-contct {
+/*.btn-contct {
     width: 100px;
     height: 50px;
     margin-left: 100px;
 } */
 
-.container2{
+/* .container2{
     width: 100%;
     background-color: black;
     height: 27vh;
     margin-top: 0px;
-}
+} */
 
-.title{
+/* .title{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bolder;
     font-size: 30px;
     color: pink;
     padding-left: 500px;
     padding-top: 25px;
-}
+} */
 
-.text{
+/* .text{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 300;
     font-size: 17px;
     color: white;
     letter-spacing: 0px;
     padding-left: 30px;
-}
+} */
 
-.form{
+/* .form1{
     width: 100%;
-    background-color: lightgray;
-    height: 150vh;
+    background-color: grey;
+    height: 100vh;
     margin-top: 0px;
 }
 
-.title2{
+.holder{
+    margin-top: 100px;
+    background-color: white;
+    width: 450px;
+    height: 370px;
+    margin-left: 390px;
+    position: absolute;
+}
+
+.tit{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 300;
     font-size: 20px;
-    padding-left: 450px;
+    padding-left: 20px;
     padding-top: 20px;
 }
 
-#name{
+#namee{
     width: 350px;
     height: 35px;
-    margin-left: 450px;
+    margin-left: 20px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     margin-top: 20px;
     background-color: black;
     color: white;
     padding-left: 15px;
-}
+} */
 
-#mesg{
+/* #mesg{
     width: 350px;
     height: 200px;
     margin-left: 450px;
@@ -115,9 +124,9 @@
     color: white;
     padding-top: 0px;
     padding-left: 15px;
-}
+} */
 
-.send{
+/* .send{
     width: 110px;
     height: 40px;
     background-color: black;
@@ -133,7 +142,7 @@
 input:placeholder{
     color: white;
     margin-left: 30px;
-}
+} */
 
 @media screen and ( max-width:712px ) {
     .container {
@@ -149,18 +158,18 @@ input:placeholder{
         color: white;
         letter-spacing: 0px;
         line-height: 2.0rem;
-        padding-left: 17px;
+        padding-left: 55px;
     }
     .line{
         background-color: white;
         width: 53px;
-        margin-left: 17px;
+        margin-left: 55px;
     }
     .imag {
         background-color: black;
-        width: 60px;
-        height: 20px;
-        margin-left: 17px;
+        width: 65px;
+        height: 15px;
+        margin-left: 55px;
         margin-top: 10px;
     }
     
