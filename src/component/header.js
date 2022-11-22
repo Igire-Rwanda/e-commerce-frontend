@@ -90,7 +90,7 @@ const Header = ()=>{
           <header className="header">
             <div className="navbar">
                 <div className="Logo-img">
-                  <img src={Logo} alt=""></img>
+                 <Link to = "/"> <img src={Logo} alt=""></img> </Link>
                 </div>
                 <section className="Search" >
                  <Search action="https://www.google.com/search"

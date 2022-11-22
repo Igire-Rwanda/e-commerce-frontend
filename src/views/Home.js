@@ -5,16 +5,17 @@ import Footer from "../component/footer";
 import "../component/header.css";
 import "../App.css"
 import HomeLinks from "../component/HomeLinks";
+import { Outlet } from "react-router-dom";
+import HomeProduct from "../component/HomeProduct";
 
 const Home=()=>{
 
     return(
         <>
-        <Header/>
-        {/* <h1>lorem in the country are good for others</h1>
-        <img src={image}></img> */}
-        <HomeLinks />
-        <Footer/>
+            <h1 className="home-h1">OUR PRODUCTS:</h1>
+            <HomeProduct /> 
+            <h1 className="home-h1">OUR FEATURES PRODUCTS:</h1>
+            <HomeProduct /> 
         </>
     )
 }

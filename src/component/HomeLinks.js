@@ -1,47 +1,96 @@
-import React from 'react';
+import React, { useEffect ,useState} from 'react';
+import { Link, Outlet, useParams } from 'react-router-dom';
 // import photo from "../images/cart-image.JPG";
-import header from "../component/styles/homelinks.css";
+import Home from '../views/Home';
+import HomeProductCard from './HomeProductCard';
+import Header from "../component/header";
+import Footer from './footer';
+import "../component/styles/homelinks.css"
 
 const HomeLinks = () => {
+    const params = useParams();
+    const [showMoreCategories,setShowMoreCategories] = useState(false);
+    useEffect(()=> {
+        console.log(window.location.pathname);
+    },[])
+
 
     return (
         <>
+        <Header/>
             <div className="Box-container">
                 <div className='links-container'>
                     <div>
                         <ul className="links-list">
+                            <button> <li className="btn"><a href="/" className="link">All Categories:</a></li></button>
+                            <li className="alink">
+                                <Link to='electronics' className="link">Electonics</Link>
+                                <span className='angle-right-icon'><i class="fa-solid fa-angle-right"></i></span>
+                            </li>
+                            <li className="alink">
+                                <Link to='decor' className="link">Home Decorations</Link>
+                                <span className='angle-right-icon'><i class="fa-solid fa-angle-right"></i></span>
+                            </li>
+                            <li className="alink">
+                                <Link to='men' className="link">Men's Clothing</Link>
+                                <span className='angle-right-icon'><i class="fa-solid fa-angle-right"></i></span>
+                            </li>
+                            <li className="alink">
+                                <Link to='women' className="link">Women's Clothing</Link>
+                                <span className='angle-right-icon'><i class="fa-solid fa-angle-right"></i></span>
+                            </li>
+                            <li className="alink">
+                                <Link to='baby' className="link">Baby Toys</Link>
+                                <span className='angle-right-icon'><i class="fa-solid fa-angle-right"></i></span>
+                            </li>
+                            <li className="alink">
+                                <Link to='sports' className="link">Sports</Link>
+                                <span className='angle-right-icon'><i class="fa-solid fa-angle-right"></i></span>
+                            </li>
 
-                            <button> <li className="btn"><a href="/Home" className="link">All Categories</a></li></button>
-                            <li className="alink"><a href="/electronics" className="link">Electonics</a>
-                                <span className='angle-right-icon'><i class="fa-solid fa-angle-right"></i></span>
-                            </li>
-                            <li className="alink"><a href="/decor" className="link">Decorations </a>
-                                <span className='angle-right-icon'><i class="fa-solid fa-angle-right"></i></span>
-                            </li>
-                            <li className="alink"><a href="/men" className="link">Men's Clothing </a>
-                                <span className='angle-right-icon'><i class="fa-solid fa-angle-right"></i></span>
-                            </li>
-                            <li className="alink"><a href="/women" className="link">Women's Clothing</a>
-                                <span className='angle-right-icon'><i class="fa-solid fa-angle-right"></i></span>
-                            </li>
-                            <li className="alink"><a href="/baby" className="link">Baby Toys</a>
-                                <span className='angle-right-icon'><i class="fa-solid fa-angle-right"></i></span>
-                            </li>
-                            <li className="alink"><a href="/sports" className="link">Sports</a>
-                                <span className='angle-right-icon'><i class="fa-solid fa-angle-right"></i></span>
-                            </li>
-                            <button> <li className="btn"><a href="/Home" className="link">More</a></li></button>
+                           {showMoreCategories && (<>
 
+                            <li className="alink">
+                        <Link to='electronics' className="link">Beauty&Cosmetics</Link>
+                        <span className='angle-right-icon'><i class="fa-solid fa-angle-right"></i></span>
+                    </li>
+                    <li className="alink">
+                        <Link to='decor' className="link">Lights&Lighting</Link>
+                        <span className='angle-right-icon'><i class="fa-solid fa-angle-right"></i></span>
+                    </li>
+                    <li className="alink">
+                        <Link to='men' className="link">Home Textiles</Link>
+                        <span className='angle-right-icon'><i class="fa-solid fa-angle-right"></i></span>
+                    </li>
+                    <li className="alink">
+                        <Link to='women' className="link">Women's Clothing</Link>
+                        <span className='angle-right-icon'><i class="fa-solid fa-angle-right"></i></span>
+                    </li>
+                    <li className="alink">
+                        <Link to='baby' className="link">Baby Toys</Link>
+                        <span className='angle-right-icon'><i class="fa-solid fa-angle-right"></i></span>
+                    </li>
+                    <li className="alink">
+                        <Link to='sports' className="link">Sports</Link>
+                        <span className='angle-right-icon'><i class="fa-solid fa-angle-right"></i></span>
+                    </li>
+                            
+                            </>)}
+                            <button> <li className="more-button" onClick={()=>setShowMoreCategories(!showMoreCategories)}>See More:</li></button>
                         </ul>
                     </div>
 
                     <div style={{ width: "70%" }}>
-                        <img className='cart-image' ></img>
+                        { window.location.pathname ==='/' ? <> <div className='cart-image'></div> <Home /></> : <Outlet />}
+                
                     </div>
-
+            
                 </div>
 
             </div>
+
+            <Footer/>
+            
         </>
     )
 }
