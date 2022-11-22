@@ -13,6 +13,7 @@ import { Link } from "react-router-dom";
 import { SidebarData } from "./SidebarData";
 import { IconContext } from "react-icons";
 import { Icon } from "@mui/material";
+import HeaderTwo from "./headerTwo";
 
 const Header = () => {
   const [sidebar, setSidebar] = useState(false);
@@ -71,7 +72,7 @@ const Header = () => {
               <span></span>
               <label htmlFor="">USD</label>
             </div>
-            <div>
+            <div style={{ color: "white" }}>
               <label>Home</label>
               <label>Shipping</label>
               <label>ContactUs</label>
@@ -86,7 +87,7 @@ const Header = () => {
         </section>
       </>
       {/* ---------------------Navbar-------------- */}
-
+      {/* <HeaderTwo/> */}
       <header className="header">
         <div className="navbar">
           <div className="Logo-img">
@@ -109,19 +110,15 @@ const Header = () => {
             </Search>
           </section>
           <div className="icon">
-            <a href="/login">
-              {/* <img src={user}></img> */}
+            <a href="#">
+              <img src={user}></img>
               <h4>Login</h4>
             </a>
             <a href="#">
-              {/* <img src={cart}></img> */}
+              <img src={cart}></img>
               <h4>Cart</h4>
             </a>
-            <a href="#">
-              {/* <img src={order}></img> */}
-              <span></span>
-              <h4>order</h4>
-            </a>
+            {/* <a href="#"><img src={order}></img><span></span><h4 >order</h4></a> */}
           </div>
         </div>
         {/* <ul className="links-container">
