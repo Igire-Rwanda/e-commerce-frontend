@@ -110,14 +110,18 @@ const Header = () => {
           </section>
           <div className="icon">
             <a href="/login">
-              <img src={user}></img>
+              {/* <img src={user}></img> */}
               <h4>Login</h4>
             </a>
             <a href="#">
-              <img src={cart}></img>
+              {/* <img src={cart}></img> */}
               <h4>Cart</h4>
             </a>
-            {/* <a href="#"><img src={order}></img><span></span><h4 >order</h4></a> */}
+            <a href="#">
+              {/* <img src={order}></img> */}
+              <span></span>
+              <h4>order</h4>
+            </a>
           </div>
         </div>
         {/* <ul className="links-container">

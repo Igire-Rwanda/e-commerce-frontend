@@ -83,6 +83,10 @@ color: black;
     margin-left: 60px;
 
 }
+.icon a{
+   padding-left: 10px;
+  
+}
 @media screen and (max-width:390px){
     .icon  h4{
         margin-top: 100rem;

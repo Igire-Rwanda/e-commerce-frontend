@@ -24,6 +24,7 @@ import Cosmetics from "./component/Cosmetics";
 import Lights from "./component/Lights";
 import Textiles from "./component/Textiles";
 import SignIn from "./component/signIn";
+import Signup from "./component/signup";
 
 function App() {
   return (
@@ -55,6 +56,7 @@ function App() {
             <Route path="ToysDes/:id" element={<ToysDescription />} />
           </Route>
           <Route path="login" element={<SignIn />} />
+          <Route path="signup" element={<Signup />} />
           <Route exact path="/Dashbrd" element={<Dashbrd />} />
           <Route exact path="/AdminDashbrd" element={<AdminDashboard />} />
           <Route exact path="/product" element={<Product />} />
