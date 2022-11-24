@@ -1,0 +1,68 @@
+
+
+.form-Shipping h1{
+    text-align: center;
+    font-size:25px; 
+    color:black;
+}
+
+
+label{
+    margin: 3px;
+    color: black;
+   
+}
+
+
+.p input{
+    width: 60%;
+    height: 1vh;
+    border-radius: 6px;
+    border: none;
+    margin-left: 40px;
+    padding: 20px;
+
+}
+
+.p select{
+
+    margin-left: 80px ;
+}
+
+.btn button{
+    width:160px;
+    height: 40px;
+    border-radius: 10px;
+    background-color:  #CC8032;
+    color: white;
+    text-align: center;
+    border: none;
+    margin-top: 60px;
+    margin-left: 170px;    
+
+}
+.formone{
+    padding-top: 50px;
+    background-image: url("../assets/image/picture.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom ;
+    height: 100vh;
+    width: 60%;
+    background-color: rgba(245, 245, 245, 0.685);
+}
+
+.form-Shipping{
+    width: 605px;
+    height:104vh;
+    border: 0px solid white;
+    margin: auto;
+   color:black;
+   margin-right: 2px;
+   position: relative;
+   bottom: 75rem;
+   border-radius:7px ;
+padding: 30px;
+background-color:gainsboro
+}
+    

@@ -24,6 +24,10 @@ import Cosmetics from "./component/Cosmetics";
 import Lights from "./component/Lights";
 import Textiles from "./component/Textiles";
 import SignIn from "./component/signIn";
+import Shipping from "./views/Shipping";
+import Cart from './views/Cart'
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import { useThemeHook} from './GlobalComponents/ThemeProvider'
 
 function App() {
   return (
@@ -31,7 +35,10 @@ function App() {
       {/* <MyShop />    */}
       <BrowserRouter>
         <Routes>
+          <Route exact path ="/cart" element={<Cart/>}/>
+        <Route exact path="/Shipping" element={<Shipping/>}/>
           <Route exact path="/" element={<HomeLinks />}>
+
             <Route path="electronics" element={<Electronics />} />
             <Route path="decor" element={<Decorations />} />
             <Route path="men" element={<Men />} />

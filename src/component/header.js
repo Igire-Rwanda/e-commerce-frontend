@@ -13,8 +13,18 @@ import { Link } from "react-router-dom";
 import { SidebarData } from "./SidebarData";
 import { IconContext } from "react-icons";
 import { Icon } from "@mui/material";
+import { useCart } from 'react-use-cart'
 
-const Header = () => {
+const Header = ({size}) => {
+const {
+  isEmpty,
+  totalItems,
+
+}= useCart();
+const [show,setshow] =useState(true);
+
+const [warning, setwarning]= useState(false);
+
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
@@ -113,8 +123,9 @@ const Header = () => {
               <img src={user}></img>
               <h4>Login</h4>
             </a>
-            <a href="#">
+            <a href="/cart">
               <img src={cart}></img>
+              {!isEmpty && <span style={{ position:'relative', left: '-21px', top: '-18px'}}>{totalItems}</span>}
               <h4>Cart</h4>
             </a>
             {/* <a href="#"><img src={order}></img><span></span><h4 >order</h4></a> */}

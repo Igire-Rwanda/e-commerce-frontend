@@ -1,0 +1,81 @@
+h1{
+    text-align: center;
+    padding-top: 20px;
+}
+.row{
+    justify-content: center;
+}
+.table{
+    background-color: black;
+    margin-bottom: 1px;
+    width: 100%;
+}
+.image{
+    overflow:hidden;
+    height: 35rem;
+    background: black;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+.image .photo{
+    padding: 2rem;
+    
+}
+.productname{
+    width: 14rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background:black;
+    color: white;
+    font-size: 25px;
+}
+.price{
+    width: 14rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background:black;
+    color: white;
+    font-size: 20px;
+}
+.quantity{
+    width: 14rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background:black;
+    color: white;
+    font-size: 20px;
+}
+.q1{
+    background-color:white;
+    color: black;
+    width: 40px;
+    border-radius: 5px;
+    gap: 3px;
+
+}
+.q2{
+    background-color:white;
+    color: black;
+    width: 40px;
+    border-radius: 5px;
+}
+
+.danger{
+    background-color: tomato;
+    width: 40%;
+border-radius: 5px;
+
+}
+.total{
+    width: 14rem;
+    overflow: hidden;
+    
+    font-size: 25px;
+}
+.cart{
+    width: 10%;
+    background-color: tomato;
+    border-radius: 5px;
+    margin-left: auto;
+}

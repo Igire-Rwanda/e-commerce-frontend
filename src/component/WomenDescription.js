@@ -2,7 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import womenList from '../data/womenList';
 import allComponents from "../component/styles/allComponents.css";
+import { Button } from "react-bootstrap";
 
+import { useCart } from 'react-use-cart';
 
 const WomenDescription = () => {
     const params = useParams();
@@ -15,7 +17,7 @@ const WomenDescription = () => {
             }
         })
     }, [elect])
-
+    const { addItem }= useCart();
     return (
         <>
             <div className='cards-box'>
@@ -26,7 +28,7 @@ const WomenDescription = () => {
                     <h4>{elect.productName}</h4>
                     <h4>{elect.price}</h4>
                     <div className='link-plus'>
-                        <i className='fas fa-cart-plus'></i>
+                    <Button onClick={() =>addItem(elect)}> <i className='fas fa-cart-plus'></i></Button>
                     </div>
                     <button className='btn-dd'>buy now</button>
 

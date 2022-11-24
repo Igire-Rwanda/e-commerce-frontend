@@ -1,12 +1,12 @@
 import React from "react";
 import "./signIn.css";
-import onlineshopping from "../images/cart-image.JPG";
+import picture from'../assets/image/picture.jpg';
 
 function SignIn() {
   return (
     <div className="container1">
       <div>
-        <img src={onlineshopping} alt="" id="picture" />
+        <img src={picture} alt="" id="picture" />
       </div>
       ;.
       <div className="container3">

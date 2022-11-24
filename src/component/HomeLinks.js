@@ -13,11 +13,13 @@ const HomeLinks = () => {
     useEffect(()=> {
         console.log(window.location.pathname);
     },[])
+    const[cart,setcart]= useState([])
+    const [show,setshow] =useState(true);
 
-
+    const [warning, setwarning]= useState(false);
     return (
         <>
-        <Header/>
+        <Header  />
             <div className="Box-container">
                 <div className='links-container'>
                     <div>

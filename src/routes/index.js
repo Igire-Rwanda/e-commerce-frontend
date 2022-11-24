@@ -5,11 +5,13 @@ import HomeLayout from "../component/Homelayout";
 import Dashboard from "../views/Dashbord/Dashboard";
 import Dashlayout from "../component/admin/DashLayout";
 import Dashbrd from "../Dashbrd/Dashbrd";
+import { ThemeProvider } from './GlobalComponents/ThemeProvider';
 const index = () => {
   return (
     <>
       {/* <HomeLayout> */}
       <Routes>
+        <Route path ="#" element={<Cart/>}/>
         <Route path="/login" element={<SignIn />} />
         <Route exact path="/Dashboard" element={<Dashboard />} />
         <Route exact path="/Dashlayout" element={<Dashlayout />} />
