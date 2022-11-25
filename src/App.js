@@ -25,6 +25,7 @@ import Lights from "./component/Lights";
 import Textiles from "./component/Textiles";
 import SignIn from "./component/signIn";
 import Signup from "./component/signup";
+import Shipping from "./component/shipping";
 
 function App() {
   return (
@@ -57,6 +58,7 @@ function App() {
           </Route>
           <Route path="login" element={<SignIn />} />
           <Route path="signup" element={<Signup />} />
+          <Route path="shipping" element={<Shipping />} />
           <Route exact path="/Dashbrd" element={<Dashbrd />} />
           <Route exact path="/AdminDashbrd" element={<AdminDashboard />} />
           <Route exact path="/product" element={<Product />} />
