@@ -29,7 +29,7 @@ let year=d.getFullYear()
                <p><a href="#" style={{fontSize:"20px"}}>My Cart</a></p>
                <p><a href="#" style={{fontSize:"20px"}}>About-us</a></p>
            </div>
-           <div className="company-column">
+           <div className="companyshp-column">
                <h3 className="footer-title" style={{fontSize:"20px"}}>Shop</h3><br></br>
                <p><a href="#"style={{fontSize:"20px"}}>About Us </a></p>
                <p><a href="#" style={{fontSize:"20px"}}>Retailers</a></p>

@@ -17,8 +17,8 @@ body{
     color: #ddd;
     width: 100%;
     position: relative;
-    top: 50rem;
-    
+    top: 70rem;
+    height: 450px;
 }
 .footer-container{
    
@@ -27,19 +27,15 @@ body{
     width: 100%;
     left: 10rem;
     
-   
-
-
-    
 }
 p span{
     display: block;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-decoration: none;
 }
 .footer-title{
     color: #eee;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .copyright
@@ -62,8 +58,8 @@ p span{
    gap:2rem;
    align-items:center;
    justify-content:flex-end;
-   margin-bottom: 2rem;
-
+   margin-bottom: 1.9rem;
+   top: 50px;
 }
 /* .logo-img-container{
     
@@ -71,12 +67,11 @@ p span{
 .logo-img{
    height:5rem;
    gap: 2rem;
- 
- 
+   
   
-
-     
 }
+
+
 .log-img{
     border-radius: 50%;
     /* width: 60%; */
@@ -84,6 +79,7 @@ p span{
 }
 .copyright{
     font-size: 1rem;
+
 }
 
 p{
@@ -94,10 +90,36 @@ h6{
     /* left: 50rem; */
     text-align: center;
     font-size: 1rem;
+    padding-top: 50px;
 }
+
+.contactus-column{
+    margin-top: 160px;
+    margin-left: 100px;
+    position: absolute;
+}
+
 .contactus-column p {
 font-size: 20px;
 }
 .contactus-column a{
     font-size: 20px;
+}
+
+.account-column{
+    margin-left: 750px;
+    margin-top: 160px;
+    position: absolute;
+}
+
+.company-column{
+    margin-left: 800px;
+    margin-top: 160px;
+    position: absolute;
+} 
+
+.companyshp-column{
+    margin-left: 645px;
+    margin-top: 160px;
+    position: absolute;
 }
