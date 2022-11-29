@@ -1,6 +1,6 @@
 import React from "react";
 import "./signIn.css";
-import onlineshopping from "../images/cart-image.JPG";
+import onlineshopping from "../assets/image/e-commerce.jpg";
 
 function SignIn() {
   return (
