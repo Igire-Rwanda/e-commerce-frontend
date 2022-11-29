@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:    'Fira Sans', sans-serif;
+}
+.Head{
+    background-color: black;
+    padding: 10px 0;
+    color: white;
+  
+}
+.header-search-btn{
+    background-color: black;
+    color: white;
+    padding: 7px 17px;
+    margin-left: 170px;
+}
+.Head i{
+    margin-right: 10px;
+}
+.Head label{
+    margin-right: 30px;
+    font-size: 13px;
+}
+.header-icon{
+    /* height: 50px; */
+    display: flex;
+}
+.header-icon img{
+    width: 30px;
+    margin-right: 70px;
+}
+.Logo h3{
+font-size: 20px;
+padding: .2px;
+padding-bottom:30px ;
+margin-left: 4rem;
+color: black;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    /* background:red; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 3px solid black;
+}
+.Home{
+    font-size: 13px;
+    margin: auto;
+    padding: .5rem;
+}
+.header-header{
+    background-color: white;
+    box-shadow: 0px 1px 0px 1px gray;
+    height: 120px;
+}
+.navbars{
+    margin-left: 60rem;
+    padding: 1rem;
+   
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    width: 100%;
+}
+
+.links-container{
+    /* width: 100%; */
+    display: flex;
+    color: black;
+   flex-wrap: wrap;
+
+    list-style: none;
+}
+.links-container .link{
+    margin-left: 10rem;
+}
+.links-container .link-item .link{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15rem;
+    font-size: 16px;
+}
+.link{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: black;
+}
+
+.Logo-img img{
+    border-radius: 70%;
+    width:30%;
+    height: 50%;
+    margin-left: 60px;
+
+}
