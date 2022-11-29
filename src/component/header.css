@@ -8,6 +8,13 @@
     background-color: black;
     padding: 10px 0;
     color: white;
+  
+}
+.header-search-btn{
+    background-color: black;
+    color: white;
+    padding: 7px 17px;
+    margin-left: 170px;
 }
 .Head i{
     margin-right: 10px;
@@ -16,7 +23,14 @@
     margin-right: 30px;
     font-size: 13px;
 }
-
+.header-icon{
+    /* height: 50px; */
+    display: flex;
+}
+.header-icon img{
+    width: 30px;
+    margin-right: 70px;
+}
 .Logo h3{
 font-size: 20px;
 padding: .2px;
@@ -38,9 +52,10 @@ color: black;
     margin: auto;
     padding: .5rem;
 }
-.header{
+.header-header{
     background-color: white;
     box-shadow: 0px 1px 0px 1px gray;
+    height: 120px;
 }
 .navbars{
     margin-left: 60rem;
@@ -48,7 +63,9 @@ color: black;
    
 }
 
-.containers {
+.header-container {
+    display: flex;
+    justify-content: space-between;
     padding-top: 1rem;
     width: 100%;
 }
@@ -83,6 +100,7 @@ color: black;
     margin-left: 60px;
 
 }
+<<<<<<< HEAD
 .icon a{
    padding-left: 10px;
   
@@ -132,3 +150,5 @@ color: black;
     }
     
 }
+=======
+>>>>>>> linkLists
