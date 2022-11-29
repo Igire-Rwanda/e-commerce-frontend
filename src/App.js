@@ -24,6 +24,7 @@ import Cosmetics from "./component/Cosmetics";
 import Lights from "./component/Lights";
 import Textiles from "./component/Textiles";
 import SignIn from "./component/signIn";
+import SignUp from "./component/SignUp"
 
 function App() {
   return (
@@ -52,9 +53,11 @@ function App() {
               element={<HomeProductDesription />}
             />
             <Route path="HomeDecorDes/:id" element={<HomeDecorDescription />} />
-            <Route path="ToysDes/:id" element={<ToysDescription />} />
+            <Route path="ToysDes/:id" element={<ToysDescription />} />  
           </Route>
-          <Route path="login" element={<SignIn />} />
+            <Route path="/login" element={<SignIn />} />
+            <Route path="/signUp" element={<SignUp />} />
+         
           <Route exact path="/Dashbrd" element={<Dashbrd />} />
           <Route exact path="/AdminDashbrd" element={<AdminDashboard />} />
           <Route exact path="/product" element={<Product />} />
