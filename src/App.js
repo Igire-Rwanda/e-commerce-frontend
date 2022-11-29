@@ -24,7 +24,7 @@ import Cosmetics from "./component/Cosmetics";
 import Lights from "./component/Lights";
 import Textiles from "./component/Textiles";
 import SignIn from "./component/signIn";
-import SignUp from "./component/SignUp";
+import SignUp from "./component/signup";
 
 function App() {
   return (

@@ -63,7 +63,7 @@ const Header = () => {
     <>
       <>
         <section className="Head">
-          <div className="container d-flex">
+          <div className="header-container d-flex">
             <div className="right row RText">
               <label>Theme FQ's</label>
               <label>Need helps</label>
@@ -87,8 +87,7 @@ const Header = () => {
         </section>
       </>
       {/* ---------------------Navbar-------------- */}
-      {/* <HeaderTwo/> */}
-      <header className="header">
+      <header className="header-header">
         <div className="navbar">
           <div className="Logo-img">
             <Link to="/">
@@ -106,35 +105,23 @@ const Header = () => {
                 inputProps={{ "aria-label": "search" }}
                 name="q"
               />
-              <button className="search-btn">Search</button>
+              <button className="header-search-btn">Search</button>
             </Search>
           </section>
-          <div className="icon">
-            <a href="#">
+          <div className="header-icon">
+            <a href="/login">
               <img src={user}></img>
               <h4>Login</h4>
             </a>
             <a href="#">
-              <img src={cart}></img>  
+              <img src={cart}></img>
               <h4>Cart</h4>
             </a>
-            {/* <a href="#"><img src={order}></img><span></span><h4 >order</h4></a> */}
           </div>
         </div>
-        {/* <ul className="links-container">
-              <li className="link-item"><a href="/Home" className="link">Home</a></li>
-              <li className="link-item"><a href="#" className="link">Products</a></li>
-              <li className="link-item"><a href="#" className="link">Retailer</a></li>
-              <li className="link-item"><a href="#" className="link">ContactUs</a></li>
-              <li className="link-item"><a href="#" className="link">Shipping</a></li>
-            </ul> */}
+
         <>
-          <IconContext.Provider value={{ color: "rgba(156, 14, 62, 0.808)" }}>
-            {/* <div className="menu">
-              < a to="#" className="Menu-bars">
-                <FaIcons.FaBars onClick={showSidebar}/>
-              </a>
-            </div> */}
+          {/* <IconContext.Provider value={{ color: "rgba(156, 14, 62, 0.808)" }}>
             <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
               <ul className="nav-menu-items" onClick={showSidebar}>
                 <li className="navbar-toggle">
@@ -149,11 +136,12 @@ const Header = () => {
                         <span>{item.title}</span>
                       </a>
                     </li>
+                  
                   );
                 })}
               </ul>
             </nav>
-          </IconContext.Provider>
+          </IconContext.Provider> */}
         </>
       </header>
     </>
