@@ -4,78 +4,122 @@ h1{
 }
 .row{
     justify-content: center;
+
 }
 .table{
-    background-color: black;
+    
+    background-color: white;
     margin-bottom: 1px;
     width: 100%;
+    
+  
 }
 .image{
+    
     overflow:hidden;
     height: 35rem;
-    background: black;
-    justify-content: center;
+    background: white;
+   
     text-align: center;
-    display: flex;
-}
-.image .photo{
-    padding: 2rem;
     
 }
+.image .photo{
+    /* padding: 0rem; */
+   
+    
+}
+
+.name{
+margin-top: 80px;
+margin-right: 10px;
+
+}
 .productname{
-    width: 14rem;
+    /* width: 200px; */
     overflow: hidden;
     text-overflow: ellipsis;
-    background:black;
-    color: white;
-    font-size: 25px;
+    background:white;
+    color: black;
+    font-size: 30px;
+    margin-right: 20px;
+    
+    
+    
 }
 .price{
+    margin-right: 90px;
     width: 14rem;
     overflow: hidden;
     text-overflow: ellipsis;
-    background:black;
-    color: white;
+    background:white;
+    color: black;
     font-size: 20px;
 }
+
+.table2{
+
+  margin-right: 90px;
+display: flex;
+
+margin-top: 30px;
+
+}
+
 .quantity{
-    width: 14rem;
+    width: 4rem;
     overflow: hidden;
     text-overflow: ellipsis;
-    background:black;
-    color: white;
+    background:white;
+    color: black;
     font-size: 20px;
+    border-radius: 5px;
+    border: 0.5px solid;
+    cursor: pointer;
 }
 .q1{
     background-color:white;
     color: black;
     width: 40px;
     border-radius: 5px;
-    gap: 3px;
-
+    border: none;
+    cursor: pointer;
 }
 .q2{
+    border: none;
     background-color:white;
     color: black;
-    width: 40px;
+    width: 15%;
     border-radius: 5px;
+    padding-right: 40px;
+    cursor: pointer;
 }
 
 .danger{
-    background-color: tomato;
-    width: 40%;
+    background-color: darkgoldenrod;
+    width: 15%;
 border-radius: 5px;
+font-size: 15px;
+color:white;
+border: 1px solid;
+cursor: pointer;
 
 }
 .total{
     width: 14rem;
     overflow: hidden;
-    
     font-size: 25px;
+    margin-left: 90px;
+    
 }
 .cart{
+   
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 90px;
     width: 10%;
-    background-color: tomato;
+    background-color: darkgoldenrod;
+    color: white;
     border-radius: 5px;
-    margin-left: auto;
+    border: 1px solid;
+   
 }

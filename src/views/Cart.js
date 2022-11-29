@@ -30,26 +30,28 @@ const[price,setPrice]= useState(0);
        return(
         <tr key={index}>
         <td className="image">
-            <div className="image">
+            
             <div className="photo"><img src={item.image}/> </div>  
 
-            </div>
-
-
         </td>
+        <div className="name">
         <td className="productname">
            {item.productName}
-        </td>
-        <td className="price">
+        </td> </div>
+        
+          <div>
+          <td className="price">
            {item.price}
         </td>
-        <td className="quantity">Quantity({item.quantity})</td>
+          </div>
+       
         
-       <td>
+       <div className="table2">
         <Button className="q1" onClick={()=> updateItemQuantity(item.id, item.quantity -1)}>-</Button>
+        <button className="quantity">{item.quantity}</button>
         <Button className="q2"  onClick={()=> updateItemQuantity(item.id, item.quantity +1)}>+</Button>
         <Button className="danger" variant="danger" onClick={()=> removeItem(item.id)}>RemoveItem</Button>
-       </td>
+       </div>
 
       </tr>
        )
