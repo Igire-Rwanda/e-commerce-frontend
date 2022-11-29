@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.piecharts{
+    background-color: red;
+   position: relative;
+   bottom: 50rem;
+}
+.profile{
+    width: 60px;
+    height:8vh;
+    position: absolute;
+    left: 30%;
+    top: 30px;
+    border-radius: 50px;
+}
+.Product{
+    font-size: 16px;
+    color: rgb(80, 11, 22);
+    text-align: center;
+    position: relative;
+    top: 5px;
+    
+}
+.categories{
+  position: relative;
+  bottom:125rem; 
+  left: 70rem; 
+}
+.Money{
+    position: relative;
+    top: 20px;
+    left: 40px;
+}
+DashLayout{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+.more h1{
+    font-size: 15px;
+    text-align: center;
+    padding: 3px;
+}
+    
+
+.more Button{
+    color: black;
+    font-size: 11px;
+    padding: 13px;
+    margin-left: 0.5px;
+    margin-top: 18px;
+
+}
+.more Button:hover{
+    background-color: rgb(224, 38, 69);
+}
+
+.carouse img{
+    width: 100px;
+    height: 100px;
+    background-image: none;
+    background-repeat: no-repeat;
+    padding: 1rem;
+}
+.sold{
+    display: flex;
+    background-color: gray;
+    padding: 1rem;
+    gap: 10rem;
+    margin-left: 0.5px;
+    font-size: 6px;
+}
+.names{
+    font-size: 8px;
+    margin-left: 2rem;
+    gap: 4rem;
+}
+.id{
+    font-size: 6px;
+    position: relative;
+    left: 18rem;
+    bottom: 100px;
+}
+.i{
+font-size: 6px;
+position: relative;
+left: 33rem;
+bottom: 170px;
+}
+.searche{
+    width: 30%;
+    height: 6.5vh;
+    position: relative;
+    left: 16.2rem;
+
+}
+.Top{
+    font-size: 16px;
+    border-bottom: 5px solid rgb(124, 6, 6) ;
+    width: 100px;
+    margin-left: 2rem;
+}
+.solde{
+    font-size: 6px;
+    position: relative;
+    left: 46rem;
+    bottom: 260px;
+    
+}
+.sales{
+    font-size: 6px;
+    position: relative;
+    left: 59rem;
+    bottom: 350px;
+}
+.Topa {
+       font-size: 18px;
+    padding-left:55rem;
+   position: relative;
+   bottom: 105rem;
+}
+.numbr{
+    color: rgb(185, 69, 89);
+    font-size: 18px;
+    padding-left: 60rem;
+    position: relative;
+    bottom: 95rem;
+}
+.mre{
+    color: black;
+    font-size: 15px;
+    padding-left: 58rem;
+    justify-content: center;
+    position: relative;
+    bottom: 94rem;
+}
+.sili{
+    display: flex;
+}
+.sili h2{
+    color: black;
+    font-size: 15px;
+    position: relative;
+    bottom: 93rem;
+    left: 52rem;
+    padding: 1rem;
+    
+}
+.Tab{
+
+    position: relative;
+    bottom: 75rem;
+    width:80%;
+    left: 50px;
+}
+.available{
+    gap: 2rem;
+    font-size: 20px;
+
+}
+.Months{
+    background-color: rgb(211, 133, 146);
+    width: 10%;
+    height: 5vh;
+    color: white;
+    font-size: 20px;
+    border: none;
+    position: relative;
+    left: 5rem;
+}
