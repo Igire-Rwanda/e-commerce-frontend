@@ -37,7 +37,7 @@ const SignIn = () => {
       </div>
       <div className="container3">
         <div className="log-details">
-          <h2 className="loginHeader">Login</h2>
+          <h2 className="loginHeader">Signin</h2>
           <div className="text-input">
             <TextField jsx={{ fontSize: "large" }} id="standard-basic" label="Enter Your E-Mail:" variant="standard" name="email"
               defaultValue={user.email}
