@@ -25,6 +25,7 @@ import Lights from "./component/Lights";
 import Textiles from "./component/Textiles";
 import SignIn from "./component/signIn";
 import SignUp from "./component/signup";
+import Cart from "./views/cart";
 
 function App() {
   return (
@@ -57,7 +58,7 @@ function App() {
           </Route>
           <Route path="/login" element={<SignIn />} />
           <Route path="/signUp" element={<SignUp />} />
-
+          <Route path="/cart" element={<Cart />} />
           <Route exact path="/Dashbrd" element={<Dashbrd />} />
           <Route exact path="/AdminDashbrd" element={<AdminDashboard />} />
           <Route exact path="/product" element={<Product />} />

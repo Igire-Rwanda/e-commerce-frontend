@@ -7,80 +7,81 @@ import axios from "axios";
 import { Button } from "@mui/material";
 import { TextField } from "@mui/material";
 
-
-
-
-
-
 const SignIn = () => {
-
   const [user, setUser] = useState({});
 
-
   const changeInput = (e) => {
-    setUser({ ...user, [e.target.name]: e.target.value })
-  }
+    setUser({ ...user, [e.target.name]: e.target.value });
+  };
   const loginSave = async () => {
-
-    try{
-    const response = axios.post("http://localhost:4000/users/login", user);
-      alert(response.data.message)
-    } catch (error){
-      alert(error.response.data.message)
+    try {
+      const response = axios.post("http://localhost:4000/users/login", user);
+      alert(response.data.message);
+    } catch (error) {
+      alert(error.response.data.message);
     }
-  }
+  };
 
   return (
     <div className="signup-container">
-      <div>
-        {/* <img src={onlineshopping} alt="" id="picture" /> */}
-      </div>
+      <div>{/* <img src={onlineshopping} alt="" id="picture" /> */}</div>
       <div className="container3">
         <div className="log-details">
           <h2 className="loginHeader">Signin</h2>
           <div className="text-input">
-            <TextField jsx={{ fontSize: "large" }} id="standard-basic" label="Enter Your E-Mail:" variant="standard" name="email"
+            <TextField
+              jsx={{ fontSize: "large" }}
+              id="standard-basic"
+              label="Enter Your E-Mail:"
+              variant="standard"
+              name="email"
               defaultValue={user.email}
               onChange={changeInput}
               sx={{
                 width: { sm: 200, md: 300 },
                 "& .MuiFormLabel-root": {
-                  fontSize: "15px"
+                  fontSize: "15px",
                 },
                 "& .MuiFormLabel-root.Mui-focused": {
-                  color: 'primary.main'
+                  color: "primary.main",
                 },
                 "& .MuiInputBase-root": {
-                  height: 30
-                  
-                }
-              }} />
+                  height: 30,
+                },
+              }}
+            />
           </div>
           <div className="text-input">
-            <TextField id="standard-basic" label="Enter Your Password:" variant="standard" name="password"
+            <TextField
+              id="standard-basic"
+              label="Enter Your Password:"
+              variant="standard"
+              name="password"
               defaultValue={user.password}
               onChange={changeInput}
               sx={{
                 width: { sm: 200, md: 300 },
                 "& .MuiFormLabel-root": {
-                  fontSize: "15px"
+                  fontSize: "15px",
                 },
                 "& .MuiFormLabel-root.Mui-focused": {
-                  color: 'primary.main'
+                  color: "primary.main",
                 },
                 "& .MuiInputBase-root": {
-                  height: 30
-                }
-              }} />
+                  height: 30,
+                },
+              }}
+            />
           </div>
           <div className="btn">
-            <Button  onClick={loginSave}
+            <Button
+              onClick={loginSave}
               style={{
                 // borderRadius: 35,
                 backgroundColor: "darkgoldenrod",
 
                 // padding: "15px 30px",
-                fontSize: "18px"
+                fontSize: "18px",
               }}
               variant="contained"
             >
@@ -88,10 +89,10 @@ const SignIn = () => {
             </Button>
           </div>
           <div className="signUppar">
-            <p>Don't have an account?<Link to="signUp">Sign Up</Link></p>
+            <p>
+              Don't have an account?<Link to="/signUp">Sign Up</Link>
+            </p>
           </div>
-
-
 
           {/* <div>
           <div className="usempas">
@@ -128,6 +129,6 @@ const SignIn = () => {
     </div>
     // </div>
   );
-}
+};
 
 export default SignIn;
