@@ -39,7 +39,7 @@ const Order=()=>{
           bottom:"20rem"
         }}
       >
-        <Typography variant="h4" component="h5" sx={{
+        <Typography variant="h4" component="h5" sx={{  
           textAlign:"center",
          
         }}>Order Form</Typography>

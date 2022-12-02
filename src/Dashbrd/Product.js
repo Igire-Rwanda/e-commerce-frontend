@@ -1,4 +1,5 @@
 import * as React from 'react';
+import  { useState } from 'react';
 import DashLayout from "../CDashboard/Layout";
 import SettingsIcon from '@mui/icons-material/Settings';
 import ProductionQuantityLimitsIcon from '@mui/icons-material/ProductionQuantityLimits';
@@ -13,7 +14,8 @@ import TabPanel from '@mui/lab/TabPanel';
 import Retailer from './Retailer';
 import Retailer1 from './Retailer1';
 
-import Graph from "../Dashbrd/graph"
+import Graph from "../Dashbrd/graph";
+
 
 
 import { Button } from "@mui/material";
@@ -42,6 +44,11 @@ export default function LabTabs() {
     setValue(newValue);
   };
   const onSearch = (value: string) => console.log(value);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
 
   return (
     <>
@@ -50,7 +57,7 @@ export default function LabTabs() {
     
 
         <Box sx={{ width: '100%', typography: 'body1',position:"relative",bottom:"22rem" }}>
-        <button className='rounded-md ml-[80rem] bg-amber-700 w-[180px] p-2 h-[5vh] animate-bounce text-white text-xl'>Add new product</button>
+        <button  className='rounded-md ml-[80rem] bg-amber-700 w-[180px] p-2 h-[5vh] animate-bounce text-white text-xl'>Add new product</button>
 
           <TabContext value={value} >
             <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
