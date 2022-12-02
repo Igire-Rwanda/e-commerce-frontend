@@ -11,7 +11,13 @@ const items = [
 ];
 const View = () => {
   return (
-    <DashLayout siderItems={items}>
+    <DashLayout siderItems={items}  sx={{
+      padding: "0px 0px",
+      borderRight: "2px solid black",
+  
+      fontSize: "1.6rem"
+    }}
+         >
        <Chart/>
     </DashLayout>
   );
