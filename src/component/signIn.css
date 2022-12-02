@@ -108,8 +108,54 @@ background-color: white;
     margin-top: 150px;
 
   }
+  .checkout-container{
+
+    width: 500px;
+    height: 90vh;
+    margin: auto;
+   border-radius: 10px;
+   background-color: white;
+  box-shadow: 0 3px 3px 3px lightgray;
+  overflow: hidden;
+  transition: all 0.45;
+  margin-top: 30px;
+ 
+  }
   
-  
+  .checkout-container h2{
+    margin-left: 140px;
+    margin-top: 100px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+  }
+  .checkout-container h3{
+    margin-left: 100px;
+    margin-top: 50px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+  }
+  .link-btn{
+    color: white;
+    
+  }
+  .back-link{
+    /* margin-top: 25px; */
+    color: white;
+    /* position: absolute; */
+
+    
+  }
+  .next-btn{
+    position: absolute;
+    margin-left: 200px;
+    margin-top: -25px;
+
+  }
+  .par-links{
+    color:darkgoldenrod;
+  }
   
   
   

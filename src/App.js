@@ -24,7 +24,11 @@ import Cosmetics from "./component/Cosmetics";
 import Lights from "./component/Lights";
 import Textiles from "./component/Textiles";
 import SignIn from "./component/signIn";
-import SignUp from "./component/SignUp"
+import SignUp from "./component/SignUp";
+import Checkout from "./component/Checkout";
+import Payment from "./component/Payment";
+import Summary from "./component/Summary";
+
 
 function App() {
   return (
@@ -57,6 +61,12 @@ function App() {
           </Route>
             <Route path="/login" element={<SignIn />} />
             <Route path="/signUp" element={<SignUp />} />
+            <Route path='/checkout' element={<Checkout />}/>
+            <Route path='/payment' element={<Payment />}/>
+            <Route path='/summary' element={<Summary />}/>
+
+
+        
          
           <Route exact path="/Dashbrd" element={<Dashbrd />} />
           <Route exact path="/AdminDashbrd" element={<AdminDashboard />} />
