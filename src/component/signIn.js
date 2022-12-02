@@ -1,24 +1,56 @@
 import React from "react";
 import "./signIn.css";
 import onlineshopping from "../images/pic-project.jpg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
 import { Button } from "@mui/material";
 import { TextField } from "@mui/material";
 
 const SignIn = () => {
-  const [user, setUser] = useState({});
+  const navigate = useNavigate();
+
+  const [user, setUser] = useState({
+    email: "",
+    password: "",
+  });
+
+  const clearInputs = () => {
+    setUser({
+      email: "",
+      password: "",
+    });
+  };
+  const [error, setError] = useState("");
 
   const changeInput = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
   };
-  const loginSave = async () => {
-    try {
-      const response = axios.post("http://localhost:4000/users/login", user);
-      alert(response.data.message);
-    } catch (error) {
-      alert(error.response.data.message);
+  const loginSave = async (e) => {
+    e.preventDefault();
+
+    if (!user.email) {
+      setError("Email is required,Please enter your email");
+    } else if (!user.password) {
+      setError("Password is required,Please Enter your Password");
+      return;
+    } else {
+      setError("");
+      console.log(user);
+      axios
+        .post("http://localhost:4000/users/login", user)
+        .then((response) => {
+          if (response.data.message != "Error") {
+            console.log(response.data);
+            clearInputs();
+            navigate("/Dashbrd");
+          } else {
+            setError("Failed to Save.");
+          }
+        })
+        .catch((err) => {
+          setError(err);
+        });
     }
   };
 
@@ -28,6 +60,31 @@ const SignIn = () => {
       <div className="container3">
         <div className="log-details">
           <h2 className="loginHeader">Signin</h2>
+          {error && (
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+                // width: '100%',
+              }}
+            >
+              <span
+                className="error-message"
+                style={{
+                  border: "1px solid red",
+                  color: "red",
+                  textAlign: "center",
+                  width: "80%",
+                  marginLeft: "0p x !Important",
+                  fontFamily: "roboto",
+                  padding: "0.7rem",
+                }}
+              >
+                {error}
+              </span>
+            </div>
+          )}
           <div className="text-input">
             <TextField
               jsx={{ fontSize: "large" }}
@@ -85,12 +142,17 @@ const SignIn = () => {
               }}
               variant="contained"
             >
-              Login
+              <Link to="/Dashbrd" className="back-link">
+                Login
+              </Link>
             </Button>
           </div>
           <div className="signUppar">
             <p>
-              Don't have an account?<Link to="/signUp">Sign Up</Link>
+              Don't have an account?
+              <Link to="/signUp" className="par-links">
+                Sign Up
+              </Link>
             </p>
           </div>
 
