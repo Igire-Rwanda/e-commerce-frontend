@@ -13,28 +13,27 @@ const cardSizeCSS = {
 
 export default function Head1({ style }) {
   return (
-    <Card sx={{  ...cardSizeCSS, ...style, p: "auto",height:"14vh",gap:"2rem" }}>
+    <Card sx={{  ...cardSizeCSS, ...style, p: "auto",height:"14vh",gap:"2rem",backround:"gray" }}>
       <CardContent sx={cardSizeCSS}>
         <Typography
           sx={{
             fontSize: "14px",
             fontWeight: 200,
-            color: "white",
+            color: "black",
             marginBottom: "32px",
-            lineHeight: "10px",
-            position:"relative",left:"3rem"
+            lineHeight: "10px",position:"relative",left:"6rem"
           }}
         >
-          Total Product
+          Total Customers
           
         </Typography>
         <Box sx={{ display: "flex", mb: "32px" }}>
           <Typography
             variant="h6"
             component="span"
-            sx={{ fontSize: "14px", lineHeight: "24px", fontWeight: 400,color:"white",position:"relative",left:"6rem" }}
+            sx={{ fontSize: "14px", lineHeight: "24px", fontWeight: 400,color:"black",position:"relative",left:"6rem" }}
           >
-            $300
+            $10000
           </Typography>
         </Box>
 

@@ -19,7 +19,7 @@ export default function Head1({ style }) {
           sx={{
             fontSize: "14px",
             fontWeight: 200,
-            color: "white",
+            color: "black",
             marginBottom: "32px",
             lineHeight: "10px",
             position:"relative",left:"3rem"
@@ -32,7 +32,7 @@ export default function Head1({ style }) {
           <Typography
             variant="h6"
             component="span"
-            sx={{ fontSize: "14px", lineHeight: "24px", fontWeight: 400,color:"white",position:"relative",left:"6rem" }}
+            sx={{ fontSize: "14px", lineHeight: "24px", fontWeight: 400,color:"black",position:"relative",left:"6rem" }}
           >
             $300
           </Typography>

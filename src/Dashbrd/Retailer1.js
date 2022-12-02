@@ -1,6 +1,7 @@
 
 import * as React from 'react';
 import { DataGrid, GridColDef, GridValueGetterParams } from '@mui/x-data-grid';
+
 import DeleteIcon from '@mui/icons-material/Delete';
 import Button from '@mui/material/Button';
 
@@ -27,6 +28,7 @@ const rows = [
 
 export default function DataTable() {
   return (
+    <>
     <div style={{ height: 280, width: '100%',fontSize:"4rem" }}>
       
       <DataGrid
@@ -48,6 +50,8 @@ export default function DataTable() {
       </DataGrid>
  
     </div>
+ 
+   </>
   );
 }
 
