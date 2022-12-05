@@ -1,4 +1,5 @@
 import * as React from 'react';
+import  { useState } from 'react';
 import DashLayout from "../CDashboard/Layout";
 import SettingsIcon from '@mui/icons-material/Settings';
 import ProductionQuantityLimitsIcon from '@mui/icons-material/ProductionQuantityLimits';
@@ -12,8 +13,11 @@ import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 import Retailer from './Retailer';
 import Retailer1 from './Retailer1';
+import AddIcon from '@mui/icons-material/Add';
+import Graph from "../Dashbrd/graph";
+import {Link} from "react-router-dom";
+import TotalSales from "../component/Sales"
 
-import Graph from "../Dashbrd/graph"
 
 
 import { Button } from "@mui/material";
@@ -24,10 +28,12 @@ import { Button } from "@mui/material";
 const items = [
   { name: "Dashboard", icon: <PeopleAltIcon sx={{ color: "pink" }} />, path: "/Dashbrd" },
   { name: "Product", icon: <ProductionQuantityLimitsIcon />, path: "/product" },
-  { name: "Order", icon: <FilterFramesIcon /> },
+  { name: "Order", icon: <FilterFramesIcon /> ,path:"/Order"},
+  {name:"Add NewProduct", icon:<AddIcon/>,path:"/AddNewProduct"},
   { name: "Checkout", icon: < BusinessCenterIcon /> },
   { name: "Customer", icon: <PeopleAltIcon /> },
-  { name: "setting", icon: <SettingsIcon /> }
+  { name: "setting", icon: <SettingsIcon /> },
+
 
 ];
 
@@ -42,6 +48,11 @@ export default function LabTabs() {
     setValue(newValue);
   };
   const onSearch = (value: string) => console.log(value);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
 
   return (
     <>
@@ -50,7 +61,7 @@ export default function LabTabs() {
     
 
         <Box sx={{ width: '100%', typography: 'body1',position:"relative",bottom:"22rem" }}>
-        <button className='rounded-md ml-[80rem] bg-amber-700 w-[180px] p-2 h-[5vh] animate-bounce text-white text-xl'>Add new product</button>
+        <button  className='rounded-md ml-[80rem] bg-amber-700 w-[180px] p-2 h-[5vh] animate-bounce text-white text-xl'><Link to="/AddNewProduct">Add New Product</Link></button>
 
           <TabContext value={value} >
             <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
@@ -69,7 +80,9 @@ export default function LabTabs() {
            <Retailer1/>
            < Graph/>
             </TabPanel>
-            <TabPanel value="3">Item Three</TabPanel>
+            <TabPanel value="3">
+              <TotalSales/>
+              </TabPanel>
           </TabContext>
           
         </Box>

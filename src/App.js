@@ -3,6 +3,7 @@ import Home from "./views/Home";
 import Dashbrd from "./Dashbrd/Dashbrd";
 import AdminDashboard from "./Dashbrd/AdminDashbord";
 import Product from "./Dashbrd/Product";
+import AddNewProduct from "./Dashbrd/AddNewProduct"
 import Header from "./component/head";
 import Order from "./Dashbrd/oder";
 import HomeLinks from "./component/HomeLinks";
@@ -29,6 +30,8 @@ import Cart from "./views/cart";
 import Checkout from "./component/Checkout";
 import Payment from "./component/Payment";
 import Summary from "./component/Summary";
+import Dashboard from "./Dashbrd/Dashbrd";
+import ContactUS from "./components/ContactUs";
 
 function App() {
   return (
@@ -69,7 +72,10 @@ function App() {
           <Route exact path="/Dashbrd" element={<Dashbrd />} />
           <Route exact path="/AdminDashbrd" element={<AdminDashboard />} />
           <Route exact path="/product" element={<Product />} />
-          <Route exact path="/order" element={<Order />} />
+          <Route exact path="/Order" element={<Order />} />
+          <Route exact path="/AddNewProduct" element={<AddNewProduct/>}/>
+          <Route exact path="/Dashboard" element={<Dashboard/>}/>
+          <Route exact path="/ContactUS" element={<ContactUS/>}/>
         </Routes>
       </BrowserRouter>
     </>

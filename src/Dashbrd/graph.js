@@ -5,43 +5,43 @@ const data = [
   {
     name: 'Electricity',
     uv: 4000,
-    pv: 2400,
+    Sold: 2400,
     amt: 2400,
   },
   {
     name: 'Shoes',
     uv: 3000,
-    pv: 1398,
+    Sold: 1398,
     amt: 2210,
   },
   {
     name: 'Men Clothes',
     uv: 2000,
-    pv: 9800,
+    Sold: 9800,
     amt: 2290,
   },
   {
     name: 'Women Clothes',
     uv: 2780,
-    pv: 3908,
+    Sold: 3908,
     amt: 2000,
   },
   {
     name: 'Sports',
     uv: 1890,
-    pv: 4800,
+    Sold: 4800,
     amt: 2181,
   },
   {
     name: 'Toy Babby',
     uv: 2390,
-    pv: 3800,
+    Sold: 3800,
     amt: 2500,
   },
   {
     name: 'Decoration',
     uv: 3490,
-    pv: 4300,
+    Sold: 4300,
     amt: 2100,
   },
 ];
@@ -68,7 +68,7 @@ export default class Example extends PureComponent {
           <YAxis />
           <Tooltip />
           <Legend />
-          <Bar dataKey="pv" stackId="a" fill="#8884d8" />
+          <Bar dataKey="Sold" stackId="a" fill="#8884d8" />
           <Bar dataKey="uv" stackId="a" fill="#82ca9d" />
         </BarChart>
      

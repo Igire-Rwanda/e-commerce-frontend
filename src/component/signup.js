@@ -209,11 +209,13 @@ const SignUp = () => {
                                     backgroundColor: "darkgoldenrod",
 
                                     // padding: "15px 30px",
-                                    fontSize: "18px"
+                                    fontSize: "18px",
+                                    color:"white"
                                 }}
                                 variant="contained"
                             >
-                            Sign Up
+                                 <Link to="/Dashbrd" className="par-links"> Sign Up</Link>
+                           
                             </Button>
                         </div>
                         <div className="signUppar">

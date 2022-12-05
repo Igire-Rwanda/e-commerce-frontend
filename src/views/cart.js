@@ -64,6 +64,7 @@ const Cart = () => {
                     >
                       RemoveItem
                     </Button>
+                    
                   </div>
                 </tr>
               );
@@ -83,6 +84,13 @@ const Cart = () => {
           </Row>
         )}
       </Row>
+      <Button
+                      className="danger"
+                      variant="danger"
+                     
+                    >
+                      <a href="/checkout">Buy Now</a>
+                    </Button>
     </div>
   );
 };

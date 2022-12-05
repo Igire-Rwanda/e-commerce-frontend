@@ -15,6 +15,7 @@ import { IconContext } from "react-icons";
 import { Icon } from "@mui/material";
 import HeaderTwo from "./headerTwo";
 import { useCart } from "react-use-cart";
+import ContactUS from "../components/ContactUs";
 const Header = () => {
   const { isEmpty, totalItems } = useCart();
   const [show, setshow] = useState(true);
@@ -31,14 +32,15 @@ const Header = () => {
     "&:hover": {
       backgroundColor: alpha(theme.palette.common.white, 0.25),
     },
-    marginRight: theme.spacing(2),
-    marginLeft: 0,
+    marginRight: theme.spacing(0),
+    marginLeft: 30,
     width: "47rem",
     height: "40px",
     [theme.breakpoints.up("sm")]: {
-      marginLeft: theme.spacing(8),
+     
       width: "",
       border: "1px solid black",
+      right:"14rem"
     },
   }));
   const SearchIconWrapper = styled("div")(({ theme }) => ({
@@ -49,13 +51,15 @@ const Header = () => {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+    marginRight:"8rem",
+   
   }));
   const StyledInputBase = styled(InputBase)(({ theme }) => ({
     color: "inherit",
     "& .MuiInputBase-input": {
-      padding: theme.spacing(1, 1, 1, 0),
+     
       // vertical padding + font size from searchIcon
-      paddingLeft: `calc(1em + ${theme.spacing(4)})`,
+      paddingLeft: `calc(1em + ${theme.spacing(4.7)})`,
       transition: theme.transitions.create("width"),
       width: "110%",
       [theme.breakpoints.up("md")]: {
@@ -80,7 +84,8 @@ const Header = () => {
             <div style={{ color: "white" }}>
               <label>Home</label>
               <label>Shipping</label>
-              <label>ContactUs</label>
+              {/* <label>ContactUs</label> */}
+              <Link to="/ContactUS">Contact Us</Link>
             </div>
             <div className="left row phone">
               <i className="fa fa-phone"></i>

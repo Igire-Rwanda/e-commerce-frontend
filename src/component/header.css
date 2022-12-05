@@ -5,6 +5,7 @@
     font-family:    'Fira Sans', sans-serif;
 }
 .Head{
+    
     background-color: black;
     padding: 10px 0;
     color: white;
@@ -13,8 +14,8 @@
 .header-search-btn{
     background-color: black;
     color: white;
-    padding: 7px 17px;
-    margin-left: 170px;
+    padding: 12px 19px;
+    margin-left: 185.6px;
 }
 .Head i{
     margin-right: 10px;

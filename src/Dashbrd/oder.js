@@ -7,14 +7,15 @@ import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import FilterFramesIcon from '@mui/icons-material/FilterFrames';
 import { FormControl,InputLabel,Box,TextField ,Button, Typography,OutlinedInput } from "@mui/material"
 import { width } from "@mui/system"
-
+import AddIcon from '@mui/icons-material/Add';
 
 
 
 const items = [
   { name: "Dashboard", icon: <PeopleAltIcon sx={{ color: "pink" }} />, path: "/Dashbrd" },
   { name: "Product", icon: <ProductionQuantityLimitsIcon />, path: "/product" },
-  { name: "Order", icon: <FilterFramesIcon />, path: "/order" },
+  { name: "Order", icon: <FilterFramesIcon />, path: "/Order" },
+  {name:"Add NewProduct", icon:<AddIcon/>,path:"/AddNewProduct"},
   { name: "Checkout", icon: < BusinessCenterIcon /> },
   { name: "Customer", icon: <PeopleAltIcon /> },
   { name: "setting", icon: <SettingsIcon /> }
@@ -39,7 +40,7 @@ const Order=()=>{
           bottom:"20rem"
         }}
       >
-        <Typography variant="h4" component="h5" sx={{
+        <Typography variant="h4" component="h5" sx={{  
           textAlign:"center",
          
         }}>Order Form</Typography>
