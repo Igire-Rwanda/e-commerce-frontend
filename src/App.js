@@ -28,6 +28,7 @@ import SignUp from "./component/SignUp";
 import Checkout from "./component/Checkout";
 import Payment from "./component/Payment";
 import Summary from "./component/Summary";
+import AddNewProduct from "./component/AddNewProduct";
 
 
 function App() {
@@ -64,6 +65,7 @@ function App() {
             <Route path='/checkout' element={<Checkout />}/>
             <Route path='/payment' element={<Payment />}/>
             <Route path='/summary' element={<Summary />}/>
+            <Route path='/addNew' element={<AddNewProduct />}/>
 
 
         
@@ -72,6 +74,7 @@ function App() {
           <Route exact path="/AdminDashbrd" element={<AdminDashboard />} />
           <Route exact path="/product" element={<Product />} />
           <Route exact path="/order" element={<Order />} />
+          
         </Routes>
       </BrowserRouter>
     </>
