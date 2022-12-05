@@ -10,7 +10,7 @@ import Paper from '@material-ui/core/Paper';
 import { Button, Card, ListItemText } from "@mui/material";
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import Retailer from "./Retailer";
-
+import AddIcon from '@mui/icons-material/Add';
 
 import Chart from "../Dashbrd/pchart"
 
@@ -21,12 +21,14 @@ import "../views/Dashbord/Dashboard.css";
 
   
 const items = [
-  { name: "Dashboard", icon: <PeopleAltIcon sx={{color:"pink"}} />},
+  { name: "Dashboard", icon: <PeopleAltIcon sx={{color:"pink"}} />,path:"/Dashboard"},
   { name: "Product", icon: <ProductionQuantityLimitsIcon />,path:"/product"  },
-  { name: "Order", icon: <FilterFramesIcon />,path:"/order"  },
+  { name: "Order", icon: <FilterFramesIcon />,path:"/Order"  },
+  {name:"Add New Product", icon:<AddIcon/>,path:"/AddNewProduct"},
   { name: "Checkout", icon: < BusinessCenterIcon /> },
   { name: "Customer", icon: <PeopleAltIcon /> },
   { name:"setting", icon:<SettingsIcon/>}
+  
   
 ];
 const View = () => {

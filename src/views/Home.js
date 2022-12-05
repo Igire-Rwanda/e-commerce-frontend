@@ -2,6 +2,7 @@ import React from "react";
 import  image from "../assets/image/breath.png";
 import Header from "../component/header";
 import Footer from "../component/footer";
+import Offer from "../components/offer";
 import "../component/header.css";
 import "../App.css"
 import HomeLinks from "../component/HomeLinks";
@@ -14,6 +15,7 @@ const Home=()=>{
         <>
             <h1 className="home-h1">OUR PRODUCTS:</h1>
             <HomeProduct /> 
+            <Offer/>
             <h1 className="home-h1">OUR FEATURES PRODUCTS:</h1>
             <HomeProduct /> 
         </>

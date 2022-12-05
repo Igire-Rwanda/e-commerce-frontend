@@ -15,6 +15,24 @@ export const SidebarData =[
         cName:'nav-text'
     },
     {
+        title:'Dashboard',
+        path:'/Dashboard',
+        
+        cName:'nav-text'
+    },
+    {
+        title:'Checkout',
+        path:'/checkout',
+        
+        cName:'nav-text'
+    },
+    {
+        title:'Order',
+        path:'/Order',
+        
+        cName:'nav-text'
+    },
+    {
         title:'products',
         path:'/products',
        
@@ -23,6 +41,12 @@ export const SidebarData =[
     {
         title:'Shipping',
         path:'/',
+        
+        cName:'nav-text'
+    },
+    {
+        title:'AddNewProduct',
+        path:'/AddNewProduct',
         
         cName:'nav-text'
     },
