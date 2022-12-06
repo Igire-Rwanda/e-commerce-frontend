@@ -12,11 +12,9 @@ import { width } from "@mui/system"
 
 
 const items = [
-  { name: "Dashboard", icon: <PeopleAltIcon sx={{ color: "pink" }} />, path: "/Dashbrd" },
-  { name: "Product", icon: <ProductionQuantityLimitsIcon />, path: "/product" },
-  { name: "Order", icon: <FilterFramesIcon />, path: "/order" },
-  { name: "Checkout", icon: < BusinessCenterIcon /> },
-  { name: "Customer", icon: <PeopleAltIcon /> },
+  
+  { name: "Purchase Products", icon: <ProductionQuantityLimitsIcon />, path: "/product" },
+  { name: "Orders", icon: <FilterFramesIcon />, path: "/order" },
   { name: "setting", icon: <SettingsIcon /> }
 
 ];

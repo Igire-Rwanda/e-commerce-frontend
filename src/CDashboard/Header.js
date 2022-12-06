@@ -57,7 +57,7 @@
 // );
 // };
 import Box from "@mui/material/Box/Box";
-import Head from "../Dashbrd/Head1"
+import Head from "../RetailerDashboard/Head1"
 
 export default function Contributions() {
   return (

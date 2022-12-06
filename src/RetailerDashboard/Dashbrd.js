@@ -9,10 +9,10 @@ import FilterFramesIcon from '@mui/icons-material/FilterFrames';
 import Paper from '@material-ui/core/Paper';
 import { Button, Card, ListItemText } from "@mui/material";
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-import Retailer from "../Dashbrd/Retailer";
+import Retailer from "./Retailer";
 
 import PieChart from "../CDashboard/PieChart";
-import Table from "../Dashbrd/Table";
+import Table from "./Table";
 
 import "../views/Dashbord/Dashboard.css";
 // import Content from "../CDashboard/Content"

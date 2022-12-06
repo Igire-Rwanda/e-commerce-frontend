@@ -1,10 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./views/Home";
-import Dashbrd from "./Dashbrd/Dashbrd";
-import AdminDashboard from "./Dashbrd/AdminDashbord";
-import Product from "./Dashbrd/Product";
+import Dashbrd from "./RetailerDashboard/Dashbrd";
+import AdminDashboard from "./RetailerDashboard/RetailerDashbord";
+import Product from "./RetailerDashboard/Product";
 import Header from "./component/head";
-import Order from "./Dashbrd/oder";
+import Order from "./RetailerDashboard/oder";
 import HomeLinks from "./component/HomeLinks";
 import Electronics from "./component/Electronics";
 import Decorations from "./component/HomeDecor";
@@ -61,6 +61,7 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route exact path="/Dashbrd" element={<Dashbrd />} />
           <Route exact path="/AdminDashbrd" element={<AdminDashboard />} />
+
           <Route exact path="/product" element={<Product />} />
           <Route exact path="/order" element={<Order />} />
         </Routes>
