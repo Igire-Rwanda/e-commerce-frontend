@@ -32,6 +32,7 @@ import Payment from "./component/Payment";
 import Summary from "./component/Summary";
 import Dashboard from "./Dashbrd/Dashbrd";
 import ContactUS from "./components/ContactUs";
+import About from "./component/AboutUs";
 
 function App() {
   return (
@@ -76,6 +77,7 @@ function App() {
           <Route exact path="/AddNewProduct" element={<AddNewProduct/>}/>
           <Route exact path="/Dashboard" element={<Dashboard/>}/>
           <Route exact path="/ContactUS" element={<ContactUS/>}/>
+          <Route exact path="/About" element={<About/>}/>
         </Routes>
       </BrowserRouter>
     </>

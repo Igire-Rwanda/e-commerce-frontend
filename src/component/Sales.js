@@ -7,6 +7,11 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import Modal from "../component/Descri";
+import Modal1 from "../component/Descri1";
+import Modal2 from "../component/Descri2";
+import Modal3 from "../component/Descri3";
+import Modal4 from "../component/Descri4"
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -39,11 +44,11 @@ function createData(
 }
 
 const rows = [
-  createData('Electricity', 159, 6.0, 24, 4.0),
-  createData('Mens Clothes', 237, 9.0, 37, 4.3),
-  createData('Sport', 262, 16.0, 24, 6.0),
-  createData('Decoration', 305, 3.7, 67, 4.3),
-  createData('Women', 356, 16.0, 49, 3.9),
+  createData('Electricity', 159, 6.0,<Modal/> ),
+  createData('Mens Clothes', 237, 9.0, <Modal2/> ),
+  createData('Sport', 262, 16.0, <Modal1/> ),
+  createData('Decoration', 305, 3.7, <Modal3/> ),
+  createData('Women', 356, 16.0,<Modal4/> ),
 ];
 
 export default function CustomizedTables() {
@@ -52,10 +57,10 @@ export default function CustomizedTables() {
       <Table sx={{ minWidth: 700 }} aria-label="customized table">
         <TableHead>
           <TableRow>
-            <StyledTableCell>Name</StyledTableCell>
+            <StyledTableCell>Product Name</StyledTableCell>
             <StyledTableCell align="right">price</StyledTableCell>
-            <StyledTableCell align="right">Quantity&nbsp;(g)</StyledTableCell>
-            <StyledTableCell align="right">Views&nbsp;(g)</StyledTableCell>
+            <StyledTableCell align="right">Quantity&nbsp;(kg)</StyledTableCell>
+            <StyledTableCell align="right">Views&nbsp;(kg)</StyledTableCell>
   
           </TableRow>
         </TableHead>
