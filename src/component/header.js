@@ -37,10 +37,9 @@ const Header = () => {
     width: "47rem",
     height: "40px",
     [theme.breakpoints.up("sm")]: {
-     
       width: "",
       border: "1px solid black",
-      right:"14rem"
+      right: "14rem",
     },
   }));
   const SearchIconWrapper = styled("div")(({ theme }) => ({
@@ -51,13 +50,11 @@ const Header = () => {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    marginRight:"8rem",
-   
+    marginRight: "8rem",
   }));
   const StyledInputBase = styled(InputBase)(({ theme }) => ({
     color: "inherit",
     "& .MuiInputBase-input": {
-     
       // vertical padding + font size from searchIcon
       paddingLeft: `calc(1em + ${theme.spacing(4.7)})`,
       transition: theme.transitions.create("width"),
@@ -74,22 +71,26 @@ const Header = () => {
         <section className="Head">
           <div className="header-container d-flex">
             <div className="right row RText">
-              <label>Theme FQ's</label>
-              <label>Need helps</label>
+              <label style={{ fontSize: "16px" }}>Welcome</label>
+              <label style={{ fontSize: "16px" }}>Need helps</label>
               <span></span>
-              <label htmlFor="">EN</label>
+              <label htmlFor="" style={{ fontSize: "16px" }}>
+                EN
+              </label>
               <span></span>
               <label htmlFor="">USD</label>
             </div>
             <div style={{ color: "white" }}>
-              <label>Home</label>
-              {/* <label>Shipping</label> */}
-              <Link to="/checkout">Shipping</Link>
+              <label style={{ fontSize: "16px" }}>Home</label>
+              <label style={{ fontSize: "16px" }}>Shipping</label>
               {/* <label>ContactUs</label> */}
-              <Link to="/ContactUS">Contact Us</Link>
-             
+              <Link to="/ContactUS" style={{ fontSize: "16px" }}>
+                Contact Us
+              </Link>
             </div>
-            <Link to="/About" style={{fontSize:"16px"}}>AboutUs</Link>
+            <Link to="/About" style={{ fontSize: "16px" }}>
+              AboutUs
+            </Link>
             <div className="left row phone">
               <i className="fa fa-phone"></i>
               <label>+250785214483</label>

@@ -97,7 +97,7 @@ const About=() =>{
         <Card  bordered={true} className="Card">
           <img src={Service1} className="service"></img>
           <h1 style={{color:"black",fontSize:"16px"}}> Name: Uwase Yvone</h1>
-          <Button  sx={{backgroundColor:" darkgoldenrod",fontSize:"1.2rem",color:"black",marginLeft:"8rem",marginTop:"5px"}}>FrontEnd Developer</Button>
+          <Button  sx={{backgroundColor:" darkgoldenrod",fontSize:"1.2rem",color:"black",marginLeft:"8rem",marginTop:"5px"}}>Full stack Developer</Button>
         </Card>
         <Card  bordered={true} className="Card">
           <img src={Service3} className="service"></img>

@@ -25,7 +25,7 @@ export default function Head1({ style }) {
             position:"relative",left:"3rem"
           }}
         >
-          Total Product
+          Total Sales
           
         </Typography>
         <Box sx={{ display: "flex", mb: "32px" }}>
