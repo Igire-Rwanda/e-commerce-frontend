@@ -36,6 +36,7 @@ module.exports = [
         price:"4000Rwf",
         image:'images/homeProduct/dress6.jpg'
     }
-    
+
+  
   
 ]

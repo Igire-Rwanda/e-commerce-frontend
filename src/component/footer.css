@@ -13,11 +13,12 @@ body{
 }
 .footer{
     background: black;
-    padding: 2rem;
+    padding: 1rem;
     color: #ddd;
     width: 100%;
     position: relative;
-    top: 50rem;
+    display: flex;
+    /* top: 50rem; */
     
 }
 .footer-container{
@@ -68,12 +69,14 @@ p span{
 /* .logo-img-container{
     
 } */
-.logo-img{
-   height:5rem;
-   gap: 2rem;
+.logo-img{ 
+    margin-bottom: 10px; 
+    padding-bottom: 5px;
+    display: flex;
+   height:4rem;
+   gap: 3rem; 
  
- 
-  
+
 
      
 }

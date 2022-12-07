@@ -9,6 +9,7 @@ const Footer = () => {
   const d = new Date();
   let year = d.getFullYear();
   return (
+    <>
     <div className="footer">
       <div className="footer-container">
         <div className="logo-column">
@@ -23,7 +24,7 @@ const Footer = () => {
           <p>Kigali Rwanda</p>
           <p>
             <a href="tel:+250-785-322-071" style={{ fontSize: "20px" }}>
-              tel:+250-785-322-071
+              tel:+250-784-792-020
             </a>
           </p>
           <p>
@@ -33,7 +34,7 @@ const Footer = () => {
           </p>
           <p>
             <a href="#" style={{ fontSize: "20px" }}>
-              Street No. 12m Newyork 12,
+              Street No. 12m Kigali 12,
             </a>
           </p>
         </div>
@@ -43,12 +44,12 @@ const Footer = () => {
           </h3>
           <br></br>
           <p>
-            <a href="#" style={{ fontSize: "20px" }}>
+            <a href="login" style={{ fontSize: "20px" }}>
               Login
             </a>
           </p>
           <p>
-            <a href="#" style={{ fontSize: "20px" }}>
+            <a href="signup" style={{ fontSize: "20px" }}>
               Sign up
             </a>
           </p>
@@ -74,7 +75,7 @@ const Footer = () => {
             </a>
           </p>
           <p>
-            <a href="#" style={{ fontSize: "20px" }}>
+            <a href="" style={{ fontSize: "20px" }}>
               Retailers
             </a>
           </p>
@@ -129,11 +130,12 @@ const Footer = () => {
           <img src={masterfooter} alt="logo footer" className="logo-img" />
         </div>
       </div>
-
-      <h6 style={{ fontSize: "20px" }}>
+     
+    </div>
+    <h6 style={{ fontSize: "20px" }}>
         copyright &copy;{year} Retailers Shop,Inc.All Rights Resrved{""}
       </h6>
-    </div>
+    </>
   );
 };
 export default Footer;
