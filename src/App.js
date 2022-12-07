@@ -3,7 +3,7 @@ import Home from "./views/Home";
 import Dashbrd from "./Dashbrd/Dashbrd";
 import AdminDashboard from "./Dashbrd/AdminDashbord";
 import Product from "./Dashbrd/Product";
-import AddNewProduct from "./Dashbrd/AddNewProduct"
+import AddNewProduct from "./Dashbrd/AddNewProduct";
 import Header from "./component/head";
 import Order from "./Dashbrd/oder";
 import HomeLinks from "./component/HomeLinks";
@@ -73,9 +73,9 @@ function App() {
           <Route exact path="/AdminDashbrd" element={<AdminDashboard />} />
           <Route exact path="/product" element={<Product />} />
           <Route exact path="/Order" element={<Order />} />
-          <Route exact path="/AddNewProduct" element={<AddNewProduct/>}/>
-          <Route exact path="/Dashboard" element={<Dashboard/>}/>
-          <Route exact path="/ContactUS" element={<ContactUS/>}/>
+          <Route exact path="/AddNewProduct" element={<AddNewProduct />} />
+          <Route exact path="/Dashboard" element={<Dashboard />} />
+          <Route exact path="/ContactUS" element={<ContactUS />} />
         </Routes>
       </BrowserRouter>
     </>
