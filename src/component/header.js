@@ -91,9 +91,9 @@ const Header = () => {
             <Link to="/About" style={{fontSize:"16px"}}>AboutUs</Link>
             <div className="left row phone">
               <i className="fa fa-phone"></i>
-              <label>+250785214483</label>
+              <label>+250784792020</label>
               <i className="fa fa-envelope"></i>
-              <label className="eco">xxx@gmail.com</label>
+              <label className="eco">e-commerce@gmail.com</label>
             </div>
           </div>
         </section>
