@@ -112,7 +112,7 @@ const Footer = () => {
           </p>
           <p>
             <a href="#" style={{ fontSize: "20px" }}>
-              Support
+             Any Support
             </a>
           </p>
         </div>
