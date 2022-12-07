@@ -13,10 +13,10 @@ const Home=()=>{
 
     return(
         <>
-            <h1 className="home-h1">OUR PRODUCTS:</h1>
+            <h1 className="home-h1" style={{fontSize:"30px",color:"darkgoldenrod"}}>OUR PRODUCTS:</h1>
             <HomeProduct /> 
             <Offer/>
-            <h1 className="home-h1">OUR FEATURES PRODUCTS:</h1>
+            <h1 className="home-h1"style={{fontSize:"30px",color:"darkgoldenrod"}}>OUR FEATURES PRODUCTS:</h1>
             <HomeProduct /> 
         </>
     )

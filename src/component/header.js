@@ -6,7 +6,7 @@ import order from "../assets/order.png";
 import SearchIcon from "@mui/icons-material/Search";
 import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
-import Logo from "../assets/log-removebg-preview.png";
+import Logo from "../assets/image/Logo2.jpeg";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import { Link } from "react-router-dom";
@@ -86,7 +86,9 @@ const Header = () => {
               <label>Shipping</label>
               {/* <label>ContactUs</label> */}
               <Link to="/ContactUS">Contact Us</Link>
+             
             </div>
+            <Link to="/About" style={{fontSize:"16px"}}>AboutUs</Link>
             <div className="left row phone">
               <i className="fa fa-phone"></i>
               <label>+250785214483</label>

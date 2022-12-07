@@ -7,13 +7,19 @@
 }
 
  .cont {
-    width: 90%;
+    width: 103%;
     background-color: black;
     height: 27vh;
-    margin-left: 40px;
+  
     margin-top: 50px;
 }
-
+.pus{
+    width:15rem;
+    position: relative;
+    left: 80rem;
+    bottom: 67px;
+    
+}
 .info {
     width: 50%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
