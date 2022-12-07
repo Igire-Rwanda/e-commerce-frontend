@@ -33,6 +33,9 @@ import Summary from "./component/Summary";
 import Dashboard from "./Dashbrd/Dashbrd";
 import ContactUS from "./components/ContactUs";
 import About from "./component/AboutUs";
+import Message from "./component/Message";
+import Main from "./component/Main";
+import Modal from "./component/Modal";
 
 function App() {
   return (
@@ -74,10 +77,13 @@ function App() {
           <Route exact path="/AdminDashbrd" element={<AdminDashboard />} />
           <Route exact path="/product" element={<Product />} />
           <Route exact path="/Order" element={<Order />} />
+          <Route exact path="/About" element={<About />} />
           <Route exact path="/AddNewProduct" element={<AddNewProduct />} />
           <Route exact path="/Dashboard" element={<Dashboard />} />
           <Route exact path="/ContactUS" element={<ContactUS />} />
-          <Route exact path="/About" element={<About />} />
+          <Route exact path="/Message" element={<Message />} />
+          <Route exact path="/Main" element={<Main />} />
+          <Route exact path="/Modal" element={<Modal />} />
         </Routes>
       </BrowserRouter>
     </>

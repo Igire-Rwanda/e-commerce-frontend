@@ -31,7 +31,7 @@ const Payment = () => {
 
   return (
     <>
-      <div>
+      <div className="shipping-container">
         <div className="checkout-container">
           <h2>Checkout</h2>
           <h3>Payment Method:</h3>
@@ -83,9 +83,10 @@ const Payment = () => {
             <Button
               variant="contained"
               style={{
+            
+                backgroundColor: "darkgoldenrod",
+    
                 fontSize: "12px",
-                padding: "10px 40px",
-                marginTop: "20px",
               }}
             >
               <Link to="/checkout" className="back-link">
@@ -96,12 +97,13 @@ const Payment = () => {
             <Button
               variant="contained"
               style={{
+            
+                backgroundColor: "darkgoldenrod",
+    
                 fontSize: "12px",
-                padding: "10px 40px",
-                marginTop: "20px",
               }}
             >
-              {/* <Link to="/summary" className='link-btn'>Next</Link> */}
+              
               <Link to="/summary" className="link-btn">
                 Next
               </Link>

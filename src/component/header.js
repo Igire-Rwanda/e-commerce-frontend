@@ -83,7 +83,8 @@ const Header = () => {
             </div>
             <div style={{ color: "white" }}>
               <label>Home</label>
-              <label>Shipping</label>
+              {/* <label>Shipping</label> */}
+              <Link to="/checkout">Shipping</Link>
               {/* <label>ContactUs</label> */}
               <Link to="/ContactUS">Contact Us</Link>
              

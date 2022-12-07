@@ -81,7 +81,10 @@ const Cart = () => {
                 Clear Cart
               </Button>
 
-              <Button className="chec">Proceed to Chekout</Button>
+              <Button className="chec">
+                {" "}
+                <a href="/checkout">Proceed to Chekout</a>{" "}
+              </Button>
             </Col>
           </Row>
         )}

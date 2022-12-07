@@ -156,10 +156,36 @@ background-color: white;
   .par-links{
     color:darkgoldenrod;
   }
+
   
-  
-  
-  
+  .shipping-container{
+    display: flex;
+    background-image: url("../images/pic-project.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom left;
+    height: 100vh;
+    
+  }
+  .message-container{
+    display: flex;
+    background-image: url("../images/pic-project.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom left;
+    height: 100vh;
+
+    
+
+  }
+  .span-message{
+    font-size: x-large;
+    font-weight: bolder;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 200px;
+
+  }
   
   
   
