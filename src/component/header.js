@@ -13,8 +13,15 @@ import { Link } from "react-router-dom";
 import { SidebarData } from "./SidebarData";
 import { IconContext } from "react-icons";
 import { Icon } from "@mui/material";
-
+import HeaderTwo from "./headerTwo";
+import { useCart } from "react-use-cart";
+import ContactUS from "../components/ContactUs";
 const Header = () => {
+  const { isEmpty, totalItems } = useCart();
+  const [show, setshow] = useState(true);
+
+  const [warning, setwarning] = useState(false);
+
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
@@ -25,14 +32,15 @@ const Header = () => {
     "&:hover": {
       backgroundColor: alpha(theme.palette.common.white, 0.25),
     },
-    marginRight: theme.spacing(2),
-    marginLeft: 0,
+    marginRight: theme.spacing(0),
+    marginLeft: 30,
     width: "47rem",
     height: "40px",
     [theme.breakpoints.up("sm")]: {
-      marginLeft: theme.spacing(8),
+     
       width: "",
       border: "1px solid black",
+      right:"14rem"
     },
   }));
   const SearchIconWrapper = styled("div")(({ theme }) => ({
@@ -43,13 +51,15 @@ const Header = () => {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+    marginRight:"8rem",
+   
   }));
   const StyledInputBase = styled(InputBase)(({ theme }) => ({
     color: "inherit",
     "& .MuiInputBase-input": {
-      padding: theme.spacing(1, 1, 1, 0),
+     
       // vertical padding + font size from searchIcon
-      paddingLeft: `calc(1em + ${theme.spacing(4)})`,
+      paddingLeft: `calc(1em + ${theme.spacing(4.7)})`,
       transition: theme.transitions.create("width"),
       width: "110%",
       [theme.breakpoints.up("md")]: {
@@ -62,7 +72,7 @@ const Header = () => {
     <>
       <>
         <section className="Head">
-          <div className="container d-flex">
+          <div className="header-container d-flex">
             <div className="right row RText">
               <label>Theme FQ's</label>
               <label>Need helps</label>
@@ -71,10 +81,12 @@ const Header = () => {
               <span></span>
               <label htmlFor="">USD</label>
             </div>
-            <div>
+            <div style={{ color: "white" }}>
               <label>Home</label>
-              <label>Shipping</label>
-              <label>ContactUs</label>
+              {/* <label>Shipping</label> */}
+              <Link to="/checkout">Shipping</Link>
+              {/* <label>ContactUs</label> */}
+              <Link to="/ContactUS">Contact Us</Link>
             </div>
             <div className="left row phone">
               <i className="fa fa-phone"></i>
@@ -86,8 +98,7 @@ const Header = () => {
         </section>
       </>
       {/* ---------------------Navbar-------------- */}
-
-      <header className="header">
+      <header className="header-header">
         <div className="navbar">
           <div className="Logo-img">
             <Link to="/">
@@ -105,35 +116,30 @@ const Header = () => {
                 inputProps={{ "aria-label": "search" }}
                 name="q"
               />
-              <button className="search-btn">Search</button>
+              <button className="header-search-btn">Search</button>
             </Search>
           </section>
-          <div className="icon">
+          <div className="header-icon">
             <a href="/login">
               <img src={user}></img>
               <h4>Login</h4>
             </a>
-            <a href="#">
-              <img src={cart}></img>  
+            <a href="/cart">
+              <img src={cart}></img>
+              {!isEmpty && (
+                <span
+                  style={{ position: "relative", left: "-21px", top: "-18px" }}
+                >
+                  {totalItems}
+                </span>
+              )}
               <h4>Cart</h4>
             </a>
-            {/* <a href="#"><img src={order}></img><span></span><h4 >order</h4></a> */}
           </div>
         </div>
-        {/* <ul className="links-container">
-              <li className="link-item"><a href="/Home" className="link">Home</a></li>
-              <li className="link-item"><a href="#" className="link">Products</a></li>
-              <li className="link-item"><a href="#" className="link">Retailer</a></li>
-              <li className="link-item"><a href="#" className="link">ContactUs</a></li>
-              <li className="link-item"><a href="#" className="link">Shipping</a></li>
-            </ul> */}
+
         <>
-          <IconContext.Provider value={{ color: "rgba(156, 14, 62, 0.808)" }}>
-            {/* <div className="menu">
-              < a to="#" className="Menu-bars">
-                <FaIcons.FaBars onClick={showSidebar}/>
-              </a>
-            </div> */}
+          {/* <IconContext.Provider value={{ color: "rgba(156, 14, 62, 0.808)" }}>
             <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
               <ul className="nav-menu-items" onClick={showSidebar}>
                 <li className="navbar-toggle">
@@ -148,11 +154,12 @@ const Header = () => {
                         <span>{item.title}</span>
                       </a>
                     </li>
+                  
                   );
                 })}
               </ul>
             </nav>
-          </IconContext.Provider>
+          </IconContext.Provider> */}
         </>
       </header>
     </>

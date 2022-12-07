@@ -5,9 +5,17 @@
     font-family:    'Fira Sans', sans-serif;
 }
 .Head{
+    
     background-color: black;
     padding: 10px 0;
     color: white;
+  
+}
+.header-search-btn{
+    background-color: black;
+    color: white;
+    padding: 12px 19px;
+    margin-left: 185.6px;
 }
 .Head i{
     margin-right: 10px;
@@ -16,7 +24,14 @@
     margin-right: 30px;
     font-size: 13px;
 }
-
+.header-icon{
+    /* height: 50px; */
+    display: flex;
+}
+.header-icon img{
+    width: 30px;
+    margin-right: 70px;
+}
 .Logo h3{
 font-size: 20px;
 padding: .2px;
@@ -38,9 +53,10 @@ color: black;
     margin: auto;
     padding: .5rem;
 }
-.header{
+.header-header{
     background-color: white;
     box-shadow: 0px 1px 0px 1px gray;
+    height: 120px;
 }
 .navbars{
     margin-left: 60rem;
@@ -48,7 +64,9 @@ color: black;
    
 }
 
-.containers {
+.header-container {
+    display: flex;
+    justify-content: space-between;
     padding-top: 1rem;
     width: 100%;
 }
@@ -82,49 +100,4 @@ color: black;
     height: 50%;
     margin-left: 60px;
 
-}
-@media screen and (max-width:390px){
-    .icon  h4{
-        margin-top: 100rem;
-        display: none;
-    }
-    .icon a img{
-        padding-bottom: 1rem;
-        display: none;
-
-    }
-    .Logo-img img{
-        margin-top: 1px;
-        margin-left: 10px;
-    }
-    .link{
-        margin-bottom: 1%;
-        justify-content: space-between;
-        
-    }
-    .links-container .link-item {
-        margin-bottom: 9px;
-        display: flex;
-    }
-    .container{
-        padding: 2px;
-    }
-    .RText{
-        margin-left: 1px;
-    }
-    .RText label{
-        gap: 1px;
-        margin-right: 20px;
-    }
-    .phone i {
-        margin-left: 30px;
-        padding-top: 2px;
-    }
-    .phone label{
-        margin-left: 20px;
-    }
-    .eco{
-        padding-left: 1px;
-    }
-    
 }

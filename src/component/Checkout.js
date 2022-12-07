@@ -13,7 +13,8 @@ const  Checkout =() => {
   return (
 
     <>
-    <div >
+    
+    <div className="shipping-container">
       <div className='checkout-container'>
         <h2>Checkout</h2>
         <h3>Shipping address:</h3>
@@ -76,8 +77,10 @@ const  Checkout =() => {
         <div className='text-input'>
         <Button variant="contained"
         style={{
-           
-          fontSize: "12px"
+            
+            backgroundColor: "darkgoldenrod",
+
+            fontSize: "12px",
           }}
         >
             <Link to="/payment" className='link-btn'>Next</Link>

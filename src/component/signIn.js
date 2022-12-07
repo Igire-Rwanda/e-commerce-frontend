@@ -7,137 +7,154 @@ import axios from "axios";
 import { Button } from "@mui/material";
 import { TextField } from "@mui/material";
 
-
 const SignIn = () => {
   const navigate = useNavigate();
 
   const [user, setUser] = useState({
     email: "",
     password: "",
-});
+  });
 
-const clearInputs = () => {
+  const clearInputs = () => {
     setUser({
-        email: "",
-        password: "",
-    })
-}
+      email: "",
+      password: "",
+    });
+  };
   const [error, setError] = useState("");
 
   const changeInput = (e) => {
-    setUser({ ...user, [e.target.name]: e.target.value })
-  }
+    setUser({ ...user, [e.target.name]: e.target.value });
+  };
   const loginSave = async (e) => {
     e.preventDefault();
-    
-    if(!user.email){
+
+    if (!user.email) {
       setError("Email is required,Please enter your email");
-    }else if(!user.password){
+    } else if (!user.password) {
       setError("Password is required,Please Enter your Password");
       return;
-    }else{
+    } else {
       setError("");
       console.log(user);
-      axios.post("http://localhost:4000/users/login", user)
-      .then(response=>{
-        if (response.data.message != 'Error'){
-          console.log(response.data);
-          clearInputs();
-          navigate("/Dashbrd");
-
-        }else{
-          setError("Failed to Save.");
-        }
-      })
-      .catch(err=>{
-        setError(err);
-      })
-    }       
-  }
+      axios
+        .post("http://localhost:4000/users/login", user)
+        .then((response) => {
+          if (response.data.message != "Error") {
+            console.log(response.data);
+            clearInputs();
+            navigate("/Dashbrd");
+          } else {
+            setError("Failed to Save.");
+          }
+        })
+        .catch((err) => {
+          setError(err);
+        });
+    }
+  };
 
   return (
     <div className="signup-container">
-      <div>
-        {/* <img src={onlineshopping} alt="" id="picture" /> */}
-      </div>
+      <div>{/* <img src={onlineshopping} alt="" id="picture" /> */}</div>
       <div className="container3">
         <div className="log-details">
           <h2 className="loginHeader">Signin</h2>
-          {error &&
-            <div style={{
-                display: 'flex',
-                flexDirection: 'row',
-                justifyContent: 'center',
-                // width: '100%', 
-            }}>
-            <span className="error-message"
+          {error && (
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+                // width: '100%',
+              }}
+            >
+              <span
+                className="error-message"
                 style={{
-                    border: '1px solid red',
-                    color: 'red',
-                    textAlign: 'center',
-                    width: '80%',
-                    marginLeft: "0p x !Important",
-                    fontFamily: "roboto",
-                    padding: "0.7rem",
-                }}>
+                  border: "1px solid red",
+                  color: "red",
+                  textAlign: "center",
+                  width: "80%",
+                  marginLeft: "0p x !Important",
+                  fontFamily: "roboto",
+                  padding: "0.7rem",
+                }}
+              >
                 {error}
-            </span>
-        </div>
-        }
+              </span>
+            </div>
+          )}
           <div className="text-input">
-            <TextField jsx={{ fontSize: "large" }} id="standard-basic" label="Enter Your E-Mail:" variant="standard" name="email"
+            <TextField
+              jsx={{ fontSize: "large" }}
+              id="standard-basic"
+              label="Enter Your E-Mail:"
+              variant="standard"
+              name="email"
               defaultValue={user.email}
               onChange={changeInput}
               sx={{
                 width: { sm: 200, md: 300 },
                 "& .MuiFormLabel-root": {
-                  fontSize: "15px"
+                  fontSize: "15px",
                 },
                 "& .MuiFormLabel-root.Mui-focused": {
-                  color: 'primary.main'
+                  color: "primary.main",
                 },
                 "& .MuiInputBase-root": {
-                  height: 30
-                  
-                }
-              }} />
+                  height: 30,
+                },
+              }}
+            />
           </div>
           <div className="text-input">
-            <TextField id="standard-basic" label="Enter Your Password:" variant="standard" name="password"
+            <TextField
+              id="standard-basic"
+              label="Enter Your Password:"
+              variant="standard"
+              name="password"
               defaultValue={user.password}
               onChange={changeInput}
               sx={{
                 width: { sm: 200, md: 300 },
                 "& .MuiFormLabel-root": {
-                  fontSize: "15px"
+                  fontSize: "15px",
                 },
                 "& .MuiFormLabel-root.Mui-focused": {
-                  color: 'primary.main'
+                  color: "primary.main",
                 },
                 "& .MuiInputBase-root": {
-                  height: 30
-                }
-              }} />
+                  height: 30,
+                },
+              }}
+            />
           </div>
           <div className="btn">
-            <Button  onClick={loginSave}
+            <Button
+              onClick={loginSave}
               style={{
                 // borderRadius: 35,
                 backgroundColor: "darkgoldenrod",
 
                 // padding: "15px 30px",
-                fontSize: "18px"
+                fontSize: "18px",
               }}
               variant="contained"
             >
-              <Link to ="/Dashbrd" className="back-link">Login</Link>
+              <Link to="/Dashbrd" className="back-link">
+                Login
+              </Link>
             </Button>
           </div>
           <div className="signUppar">
-            <p >Don't have an account?<Link to="/signUp" className="par-links">Sign Up</Link></p>
+            <p>
+              Don't have an account?
+              <Link to="/signUp" className="par-links">
+                Sign Up
+              </Link>
+            </p>
           </div>
-
-
 
           {/* <div>
           <div className="usempas">
@@ -174,6 +191,6 @@ const clearInputs = () => {
     </div>
     // </div>
   );
-}
+};
 
 export default SignIn;

@@ -3,6 +3,7 @@ import Home from "./views/Home";
 import Dashbrd from "./Dashbrd/Dashbrd";
 import AdminDashboard from "./Dashbrd/AdminDashbord";
 import Product from "./Dashbrd/Product";
+import AddNewProduct from "./Dashbrd/AddNewProduct"
 import Header from "./component/head";
 import Order from "./Dashbrd/oder";
 import HomeLinks from "./component/HomeLinks";
@@ -24,12 +25,16 @@ import Cosmetics from "./component/Cosmetics";
 import Lights from "./component/Lights";
 import Textiles from "./component/Textiles";
 import SignIn from "./component/signIn";
-import SignUp from "./component/SignUp";
+import SignUp from "./component/signup";
+import Cart from "./views/cart";
 import Checkout from "./component/Checkout";
 import Payment from "./component/Payment";
 import Summary from "./component/Summary";
-import AddNewProduct from "./component/AddNewProduct";
-
+import Dashboard from "./Dashbrd/Dashbrd";
+import ContactUS from "./components/ContactUs";
+import Message from "./component/Message"
+import Main from "./component/Main"
+import Modal from "./component/Modal"
 
 function App() {
   return (
@@ -58,22 +63,26 @@ function App() {
               element={<HomeProductDesription />}
             />
             <Route path="HomeDecorDes/:id" element={<HomeDecorDescription />} />
-            <Route path="ToysDes/:id" element={<ToysDescription />} />  
+            <Route path="ToysDes/:id" element={<ToysDescription />} />
           </Route>
-            <Route path="/login" element={<SignIn />} />
-            <Route path="/signUp" element={<SignUp />} />
-            <Route path='/checkout' element={<Checkout />}/>
-            <Route path='/payment' element={<Payment />}/>
-            <Route path='/summary' element={<Summary />}/>
-            <Route path='/addNew' element={<AddNewProduct />}/>
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/login" element={<SignIn />} />
+          <Route path="/signUp" element={<SignUp />} />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/payment" element={<Payment />} />
+          <Route path="/summary" element={<Summary />} />
 
-
-        
-         
           <Route exact path="/Dashbrd" element={<Dashbrd />} />
           <Route exact path="/AdminDashbrd" element={<AdminDashboard />} />
           <Route exact path="/product" element={<Product />} />
-          <Route exact path="/order" element={<Order />} />
+          <Route exact path="/Order" element={<Order />} />
+          <Route exact path="/AddNewProduct" element={<AddNewProduct/>}/>
+          <Route exact path="/Dashboard" element={<Dashboard/>}/>
+          <Route exact path="/ContactUS" element={<ContactUS/>}/>
+          <Route exact path="/Message" element={<Message />}/>
+          <Route exact path="/Main" element={<Main />}/>
+          <Route exact path="/Modal" element={<Modal />}/>
+
           
         </Routes>
       </BrowserRouter>

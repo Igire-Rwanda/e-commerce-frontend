@@ -9,10 +9,10 @@ import FilterFramesIcon from '@mui/icons-material/FilterFrames';
 import Paper from '@material-ui/core/Paper';
 import { Button, Card, ListItemText } from "@mui/material";
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-import Retailer from "../Dashbrd/Retailer";
+import Retailer from "./Retailer";
+import AddIcon from '@mui/icons-material/Add';
 
-import PieChart from "../CDashboard/PieChart";
-import Table from "../Dashbrd/Table";
+import Chart from "../Dashbrd/pchart"
 
 import "../views/Dashbord/Dashboard.css";
 // import Content from "../CDashboard/Content"
@@ -21,31 +21,23 @@ import "../views/Dashbord/Dashboard.css";
 
   
 const items = [
-  { name: "Dashboard", icon: <PeopleAltIcon sx={{color:"pink"}} />},
+  { name: "Dashboard", icon: <PeopleAltIcon sx={{color:"pink"}} />,path:"/Dashboard"},
   { name: "Product", icon: <ProductionQuantityLimitsIcon />,path:"/product"  },
-  { name: "Order", icon: <FilterFramesIcon />,path:"/order"  },
+  { name: "Order", icon: <FilterFramesIcon />,path:"/Order"  },
+  {name:"Add New Product", icon:<AddIcon/>,path:"/AddNewProduct"},
   { name: "Checkout", icon: < BusinessCenterIcon /> },
   { name: "Customer", icon: <PeopleAltIcon /> },
   { name:"setting", icon:<SettingsIcon/>}
+  
   
 ];
 const View = () => {
   return (
     <>
     <DashLayout siderItems={items} > 
-     
+    <Chart/>
    
-    <Retailer /> 
-      <PieChart/> 
-      <h1 className="Topa">Top Categories</h1>
-      <h1 className="numbr">18,345</h1>
-      <h1 className="mre">Product sales</h1>
-      <div className="sili">
-        <h2><i class="fa-duotone fa-circle-dot" style={{color:"blue"}}></i>electricity <br></br>35%</h2>
-        <h2> <i class="fa-duotone fa-circle-dot" style={{color:"red"}}></i>Decoration <br></br> 85%</h2>
-        <h2><i class="fa-duotone fa-circle-dot" style={{color:"green"}}></i>Men's Clothes <br></br> 50%</h2>
-      </div>
-      <Table/>
+     
     </DashLayout>
     </>
   );

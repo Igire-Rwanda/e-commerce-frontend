@@ -1,4 +1,5 @@
 import * as React from 'react';
+import  { useState } from 'react';
 import DashLayout from "../CDashboard/Layout";
 import SettingsIcon from '@mui/icons-material/Settings';
 import ProductionQuantityLimitsIcon from '@mui/icons-material/ProductionQuantityLimits';
@@ -10,26 +11,29 @@ import Tab from '@mui/material/Tab';
 import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
-import { Carousel } from 'antd';
-import Fashion from "../assets/image/fashion.jpg";
-import Fifi from "../assets/image/fifi.jpg";
-import "../views/Dashbord/Dashboard.css";
-import { Button, Card, ListItemText } from "@mui/material";
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-import { AudioOutlined } from '@ant-design/icons';
-import { Input, Space } from 'antd';
-import Chart from "../CDashboard/Chat1"
+import Retailer from './Retailer';
+import Retailer1 from './Retailer1';
+import AddIcon from '@mui/icons-material/Add';
+import Graph from "../Dashbrd/graph";
+import {Link} from "react-router-dom";
+import TotalSales from "../component/Sales"
 
 
-const { Search } = Input;
+
+import { Button } from "@mui/material";
+
+
+
 
 const items = [
   { name: "Dashboard", icon: <PeopleAltIcon sx={{ color: "pink" }} />, path: "/Dashbrd" },
   { name: "Product", icon: <ProductionQuantityLimitsIcon />, path: "/product" },
-  { name: "Order", icon: <FilterFramesIcon /> },
+  { name: "Order", icon: <FilterFramesIcon /> ,path:"/Order"},
+  {name:"Add NewProduct", icon:<AddIcon/>,path:"/AddNewProduct"},
   { name: "Checkout", icon: < BusinessCenterIcon /> },
   { name: "Customer", icon: <PeopleAltIcon /> },
-  { name: "setting", icon: <SettingsIcon /> }
+  { name: "setting", icon: <SettingsIcon /> },
+
 
 ];
 
@@ -44,6 +48,11 @@ export default function LabTabs() {
     setValue(newValue);
   };
   const onSearch = (value: string) => console.log(value);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
 
   return (
     <>
@@ -52,100 +61,32 @@ export default function LabTabs() {
     
 
         <Box sx={{ width: '100%', typography: 'body1',position:"relative",bottom:"22rem" }}>
-          <TabContext value={value}>
+        <button  className='rounded-md ml-[80rem] bg-amber-700 w-[180px] p-2 h-[5vh] animate-bounce text-white text-xl'><Link to="/AddNewProduct">Add New Product</Link></button>
+
+          <TabContext value={value} >
             <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
               <TabList onChange={handleChange} aria-label="lab API tabs example">
-                <Tab label="Our Product" value="1" >
+                <Tab label="Stock" value="1" >
 
                 </Tab>
-                <Tab label="Item Two" value="2" />
-                <Tab label="Item Three" value="3" />
+                <Tab label="Order" value="2" />
+                <Tab label="Total Sales" value="3" />
               </TabList>
             </Box>
-            <TabPanel value="1" >
-              <Carousel autoplay>
-                {/* <div className="carouse">
-                  <img src={Fashion} />
-                  <img src={Fifi} />
-                  <img src={Fifi} />
-                  <img src={Fashion} />
-                </div> */}
-              </Carousel>
-              <h1 className="Top">Top Product</h1>
-              <input placeholder='search ....' className="searche">
-
-              </input>
-              <Button sx={{ position: "relative", left: "16rem", border: "1px solid black",
-               height: "6.6vh", bottom: "1px", color: "gray",
-                backgroundColor: "black" }}>Search</Button>
-              <Card sx={{
-                height: "25vh",
-                position: "relative",
-                top: "5px",
-                width: "70%"
-
-              }}>
-
-
-
-
-
-                <div className="sold">
-                  <h1>Product Name</h1>
-                  <h1>Order Id</h1>
-                  <h1>Price</h1>
-                  <h1>Solds</h1>
-                  <h1>Sales</h1>
-                </div>
-                <div className="names">
-                  <h2>Men's Clothes</h2>
-                  <h2>Women's Clothes</h2>
-                  <h2>Decoration Clothes</h2>
-                  <h2>MacBook Pro</h2>
-
-
-                </div>
-                <Button sx={{ position: "relative", top: "20px", color: "black" }}><ArrowDropDownIcon sx={{ width: "30px" }} />More Categories</Button>
-                <div className="id">
-                  <h2 style={{ color: "red" }}>#768986866</h2>
-                  <h2 style={{ color: "green" }}>#768986866</h2>
-                  <h2 style={{ color: "red" }}>#768986866</h2>
-                  <h2>#768986866</h2>
-                </div>
-                <div className="i">
-                  <h2>1890$</h2>
-                  <h2>1890$</h2>
-                  <h2>1890$</h2>
-                  <h2>1890$</h2>
-                </div>
-                <div className="solde">
-                  <h1>1890$</h1>
-                  <h1>1890$</h1>
-                  <h1>1890$</h1>
-                  <h1>1890$</h1>
-                </div>
-                <div className="sales">
-                  <h2>1890$</h2>
-                  <h2>1890$</h2>
-                  <h2>1890$</h2>
-                  <h2>1890$</h2>
-                </div>
-              </Card>
+            <TabPanel value="1" >   
+            <Retailer/>     
             </TabPanel>
             <TabPanel value="2">
-            <button className='Months' >Months</button>
-            <div className="available">
-        <h4>Purchace <span>2675$</span> </h4>
-        <h4>Available <span>49875$</span> </h4>
-        <h4>Sales Price <span>6535$</span> </h4>
-        <h4>Sales<span>65474$</span> </h4>
-        </div>
+           <Retailer1/>
+           < Graph/>
             </TabPanel>
-            <TabPanel value="3">Item Three</TabPanel>
+            <TabPanel value="3">
+              <TotalSales/>
+              </TabPanel>
           </TabContext>
+          
         </Box>
-        <Chart>
-        </Chart>
+       
     
       </DashLayout>
     </>
