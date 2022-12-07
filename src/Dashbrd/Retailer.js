@@ -5,7 +5,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import Button from '@mui/material/Button';
 
 const columns: GridColDef[] = [
-  { field: 'id', headerName: 'ID', width: 150 },
+
   { field: 'Names', headerName: 'Names', width: 120 },
   {field:"price",headerName:"price",width:132},
   {field:"Quantity",headerName:"Quantity",width:132},

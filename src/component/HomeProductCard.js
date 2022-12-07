@@ -18,6 +18,7 @@ const HomeProductCard = ({ item }) => {
                     </div>
                 </div>
             </div>
+            
         </>
     )
 }
