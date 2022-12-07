@@ -158,7 +158,7 @@ const HomeLinks = () => {
         </div>
       </div>
 
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };

@@ -9,7 +9,7 @@ function Offer() {
         <>
             <div className='cont'>
                 <div className='info'>Get Offer Up To 50% 
-                
+                <div className="line"></div>
                 </div>
                 <img src={purses} className="pus"/>
                 

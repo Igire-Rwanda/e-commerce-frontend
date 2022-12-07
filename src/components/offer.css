@@ -17,7 +17,7 @@
     width:15rem;
     position: relative;
     left: 80rem;
-    bottom: 67px;
+    bottom: 78px
     
 }
 .info {
@@ -32,11 +32,11 @@
 }
 
 .line {
-    width: 220px;
+    width: 230px;
     height: 8px;
     background-color: white;
-    margin-left: 80px;
-    margin-top: 15px;
+    margin-left: 8px;
+    margin-top: 2px;
     border-radius: 20px;
 }
 
