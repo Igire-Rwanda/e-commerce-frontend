@@ -6,6 +6,12 @@ import HomeProductCard from "./HomeProductCard";
 import Header from "../component/header";
 import Footer from "./footer";
 import "../component/styles/homelinks.css";
+import dress from "../picture/dress2.jpg";
+import dress13 from "../picture/dress13.jpg";
+import dress11 from "../picture/dress11.jpg";
+import dress14 from "../picture/dress14.jpg";
+import {Card} from "antd";
+import "../components/homepage.css"
 
 const HomeLinks = () => {
   const params = useParams();
@@ -140,8 +146,40 @@ const HomeLinks = () => {
                   onClick={() => setShowMoreCategories(!showMoreCategories)}
                 >
                   See More:
+
+
                 </li>
-              </button>
+                
+            </button>
+            <Card className="c1">
+            <img src={dress} 
+            div style={{ width:"90%" , marginTop:"10px", marginRight:"100%"}}/>
+            <p width="20rem">dresss</p>
+            <h5>20000</h5>
+            </Card>
+
+            <Card className="c2">
+           <img src={dress14} 
+            div style={{ width:"90%", marginTop:"10px", marginLeft:"20px", marginBottom:"70px"}}/>
+            <p width="20rem">dress</p>
+            <h5>350000</h5>
+            </Card>
+
+            <Card className="c3">
+            <img src={dress13} 
+            div style={{ width:"80%", marginTop:"60px", marginLeft:"50px", marginBottom:"100px", position:"relative", bottom:"1rem"}}/>
+            <p width="20rem">dress</p>
+            <h5>30000</h5>
+            </Card>
+            
+            <Card className="c4">
+            <img src={dress11} 
+            div style={{ width:"80%", marginTop:"80px", marginLeft:"50px", marginBottom:"10px", position:"relative", bottom:"14rem"}}/>
+            <p width="20rem">dress</p>
+            <h5>25000</h5>
+            </Card>
+
+
             </ul>
           </div>
 
@@ -156,6 +194,7 @@ const HomeLinks = () => {
             )}
           </div>
         </div>
+        
       </div>
 
       <Footer />

@@ -16,9 +16,9 @@ const Cart = () => {
   const [price, setPrice] = useState(0);
 
   return (
-    <div>
+    <div className="t">
       <Container className="">
-        <h1>{isEmpty ? "The Cart is Empty" : "The Cart"}</h1>
+        <h1>{isEmpty ? "The Cart is Empty" : "Here Is Your Products"}</h1>
       </Container>
       <Row className="row">
         <Table striped bordered hover variant="dark" className="table">
@@ -32,7 +32,7 @@ const Cart = () => {
                     </div>
                   </td>
                   <div className="name">
-                    <td className="productname">{item.productName}</td>{" "}
+                    <td className="productname">{item.productName}</td>
                   </div>
 
                   <div>
@@ -40,31 +40,31 @@ const Cart = () => {
                   </div>
 
                   <div className="table2">
-                    <Button
+                    <button
                       className="q1"
                       onClick={() =>
                         updateItemQuantity(item.id, item.quantity - 1)
                       }
                     >
                       -
-                    </Button>
+                    </button>
                     <button className="quantity">{item.quantity}</button>
-                    <Button
+                    <button
                       className="q2"
                       onClick={() =>
                         updateItemQuantity(item.id, item.quantity + 1)
                       }
                     >
                       +
-                    </Button>
-                    <Button
+                    </button>
+
+                    <button
                       className="danger"
                       variant="danger"
                       onClick={() => removeItem(item.id)}
                     >
                       RemoveItem
-                    </Button>
-                    
+                    </button>
                   </div>
                 </tr>
               );
@@ -80,17 +80,15 @@ const Cart = () => {
               <Button className="cart" onClick={() => emptyCart()}>
                 Clear Cart
               </Button>
+
+              <Button className="chec">
+                {" "}
+                <a href="/checkout">Proceed to Chekout</a>{" "}
+              </Button>
             </Col>
           </Row>
         )}
       </Row>
-      <Button
-                      className="danger"
-                      variant="danger"
-                     
-                    >
-                      <a href="/checkout">Buy Now</a>
-                    </Button>
     </div>
   );
 };

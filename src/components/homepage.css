@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.c1{
+
+ width: 20rem;
+ margin-left: 4rem;
+ overflow: hidden;
+ transition: all 0.4s;
+ margin-top: 230px;
+ 
+
+}
+.c1:hover{
+box-shadow: 0 10px 10px 10px lightgray;
+cursor: pointer;
+transform: translate(5px,-10px);
+}
+.c2{
+
+    width: 2 0rem;
+    margin-left: 2rem;
+    overflow: hidden;
+    transition: all 0.4s;
+    margin-top: 20px;
+    
+   
+   }
+   .c2:hover{
+   box-shadow: 0 10px 10px 10px lightgray;
+   cursor: pointer;
+   transform: translate(5px,-10px);
+   }
+   .c3{
+
+    width: 2 0rem;
+    margin-left: 2rem;
+    overflow: hidden;
+    transition: all 0.4s;
+    margin-top: 20px;
+    
+   
+   }
+   .c3:hover{
+   box-shadow: 0 10px 10px 10px lightgray;
+   cursor: pointer;
+   transform: translate(5px,-10px);
+   }
+
+   .c4{
+
+    width: 2 0rem;
+    margin-left: 2rem;
+    overflow: hidden;
+    transition: all 0.4s;
+    margin-top: 20px;
+    
+   
+   }
+   .c4:hover{
+   box-shadow: 0 10px 10px 10px lightgray;
+   cursor: pointer;
+   transform: translate(5px,-10px);
+   }

@@ -3,23 +3,23 @@ import { TextField } from "@mui/material";
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 import "./signIn.css";
+import UploadPic from "./UploadPic";
+import Select from "./Select"
 
 
 
-const  Checkout =() => {
+const  AddNewProduct =() => {
 
 
 
   return (
 
     <>
-    
-    <div className="shipping-container">
-      <div className='checkout-container'>
-        <h2>Checkout</h2>
-        <h3>Shipping address:</h3>
+    <div >
+      <div className='checkout-container '>
+        <h2 >Add New Product</h2>
         <div className='text-input'>
-        <TextField id="standard-basic" label="First Name" variant="standard" sx={{
+        <TextField id="standard-basic" label="Product Title" variant="standard" sx={{
                                     width: { sm: 200, md: 300 },
                                     "& .MuiFormLabel-root": {
                                         fontSize: "15px"
@@ -33,7 +33,7 @@ const  Checkout =() => {
                                 }} />
         </div>
         <div className='text-input'>
-        <TextField id="standard-basic" label="Last Name" variant="standard" sx={{
+        <TextField id="standard-basic" label="Product Price" variant="standard" sx={{
                                     width: { sm: 200, md: 300 },
                                     "& .MuiFormLabel-root": {
                                         fontSize: "15px"
@@ -47,7 +47,7 @@ const  Checkout =() => {
                                 }} />
         </div>
         <div className='text-input'>
-        <TextField id="standard-basic" label="Address" variant="standard" sx={{
+        <TextField id="standard-basic" label="Product Description" variant="standard" sx={{
                                     width: { sm: 200, md: 300 },
                                     "& .MuiFormLabel-root": {
                                         fontSize: "15px"
@@ -60,8 +60,9 @@ const  Checkout =() => {
                                     }
                                 }} />
         </div>
+        <Select />
         <div className='text-input'>
-        <TextField id="standard-basic" label="Company Name" variant="standard" sx={{
+        <TextField id="standard-basic" label="Quantity" variant="standard" sx={{
                                     width: { sm: 200, md: 300 },
                                     "& .MuiFormLabel-root": {
                                         fontSize: "15px"
@@ -74,16 +75,18 @@ const  Checkout =() => {
                                     }
                                 }} />
         </div>
+        
+        <UploadPic />                        
+      
+
         <div className='text-input'>
         <Button variant="contained"
         style={{
-            
-            backgroundColor: "darkgoldenrod",
-
-            fontSize: "12px",
+           
+          fontSize: "12px"
           }}
         >
-            <Link to="/payment" className='link-btn'>Next</Link>
+        Add A New Product
         </Button>
         </div>
         
@@ -93,4 +96,4 @@ const  Checkout =() => {
   )
 }
 
-export default Checkout
+export default AddNewProduct

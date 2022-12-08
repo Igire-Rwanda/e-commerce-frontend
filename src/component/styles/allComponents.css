@@ -11,6 +11,7 @@
     grid-template-rows: auto;
 }
 .cards{
+    height:300px;
     width:250px;
     padding: 10px;
     border-radius: 10px;

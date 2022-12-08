@@ -1,25 +1,35 @@
 h1{
     text-align: center;
-    padding-top: 20px;
+    padding-top: 40px;
+text-transform: capitalize;
+font-size: 30px;
 }
 .row{
-    justify-content: center;
+
+padding-left: 80px;
+
+}
+Table{
 
 }
 .table{
-    
+    margin-top: 30px;
     background-color: white;
     margin-bottom: 1px;
-    width: 100%;
+    width: 50%;
+    padding-left: 350px;
+
+
     
-  
+
 }
+
+
 .image{
     
     overflow:hidden;
     height: 35rem;
     background: white;
-   
     text-align: center;
     
 }
@@ -41,12 +51,13 @@ margin-right: 10px;
     background:white;
     color: black;
     font-size: 30px;
-    margin-right: 20px;
+    padding-left: 60px;
     
     
     
 }
 .price{
+    padding-left: 60px;
     margin-right: 90px;
     width: 14rem;
     overflow: hidden;
@@ -57,12 +68,11 @@ margin-right: 10px;
 }
 
 .table2{
+ display: grid;
+ gap:9px;
+ padding-left: 60px;
 
-  margin-right: 90px;
-display: flex;
-
-margin-top: 30px;
-
+ 
 }
 
 .quantity{
@@ -76,7 +86,19 @@ margin-top: 30px;
     border: 0.5px solid;
     cursor: pointer;
 }
-.q1{
+.table2.sign1
+{
+    margin-right: 70px;
+} .q1{
+    background-color:white;
+    color: black;
+    width: 40px;
+     border: none;
+     margin-right: 90px;
+    cursor: pointer;
+    
+}
+.q2{
     background-color:white;
     color: black;
     width: 40px;
@@ -84,19 +106,11 @@ margin-top: 30px;
     border: none;
     cursor: pointer;
 }
-.q2{
-    border: none;
-    background-color:white;
-    color: black;
-    width: 15%;
-    border-radius: 5px;
-    padding-right: 40px;
-    cursor: pointer;
-}
 
 .danger{
     background-color: darkgoldenrod;
-    width: 15%;
+    width: 80%;
+    height: 4vh;
 border-radius: 5px;
 font-size: 15px;
 color:white;
@@ -104,22 +118,39 @@ border: 1px solid;
 cursor: pointer;
 
 }
+
 .total{
+    
     width: 14rem;
     overflow: hidden;
     font-size: 25px;
-    margin-left: 90px;
+    margin-left: 250px;
     
 }
 .cart{
-   
+   margin-left: 250px;
     cursor: pointer;
     font-size: 15px;
-    margin-left: 90px;
+
+    
     width: 10%;
+    height: 4vh;
     background-color: darkgoldenrod;
     color: white;
     border-radius: 5px;
     border: 1px solid;
    
+}
+ 
+
+.chec{
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: darkgoldenrod;
+    width: 10%;
+    height: 4vh;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid;
 }
