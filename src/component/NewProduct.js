@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
-
 import axios from 'axios';
+import "./newProduct.css";
+
+
 
 const AddNewProduct = (props) => {
 
-  const [newPro, setNewPro] = useState({ title: "", price: "", image: "", description: "" });
+  const [newPro, setNewPro] = useState({ title: "", price: "", picture: "", description: "" });
   const [exiPro, SetExiPro] = useState();
-  const [image, SetImage] = useState("");
+  const [picture, SetPicture] = useState("");
 
 
   const changePro = (e) => {
@@ -16,22 +18,21 @@ const AddNewProduct = (props) => {
   const addPro = async () => {
 
     const formData = new FormData();
-    formData.append("image", image);
+    formData.append("picture", picture);
     formData.append("title", newPro.title);
     formData.append("price", newPro.price);
     formData.append("description", newPro.description);
     await axios.post("http://localhost:4000/products", formData);
     // props.setData([...props.data, newPro]);
-    setNewPro({ title: "", price: "", image: "", description: "" });
+    setNewPro({ title: "", price: "", picture: "", description: "" });
 
   }
   const changeItem = (e) => {
-    SetImage(e.target.files[0]);
+    SetPicture(e.target.files[0]);
   }
  
   return (
     <>
-     
       <div className='form-container'>
 
         <div className='form'>
@@ -60,7 +61,9 @@ const AddNewProduct = (props) => {
           <div>
             <input type="file" name="image" onChange={changeItem} /><br></br>
           </div>
-          <button type="submit" className='form-button' onClick={addPro} >Add new product</button>
+          <div >
+          <button  type="submit" className='form-button' onClick={addPro} >Add new product</button>
+          </div>
         </div>
 
 

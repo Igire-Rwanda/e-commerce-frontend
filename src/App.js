@@ -35,57 +35,93 @@ import ContactUS from "./components/ContactUs";
 import Message from "./component/Message"
 import Main from "./component/Main"
 import Modal from "./component/Modal"
+import { createContext, useState,useEffect } from "react";
+import axios from 'axios';
+import NewProduct from "./component/NewProduct"
+
+export const SuccessMessageContext = createContext();
+export const SuccessMessageContextSetter = createContext();
 
 function App() {
+  const [successMessage, setSuccessMessage] = useState({
+    message: '',
+    visible: false
+  })
+
+  const [list, setList] = useState([]);
+
+
+
+
+
+  useEffect(()=>{
+      const URL = 'http://localhost:4000/products';
+      axios.get(URL)
+      .then(response=>{
+          if(response.data.message) {
+              setList(response.data.data);
+          }
+          setList(response.data.data);
+      })
+      .catch(err=>{
+          console.log(err);
+      })
+  },[])
+
+
   return (
     <>
       {/* <MyShop />    */}
-      <BrowserRouter>
-        <Routes>
-          <Route exact path="/" element={<HomeLinks />}>
-            <Route path="electronics" element={<Electronics />} />
-            <Route path="decor" element={<Decorations />} />
-            <Route path="men" element={<Men />} />
-            <Route path="women" element={<Women />} />
-            <Route path="baby" element={<Baby />} />
-            <Route path="sports" element={<Sports />} />
-            <Route path="HomeProduct" element={<HomeProduct />} />
-            <Route path="moreCat" element={<More />} />
-            <Route path="cosmetics" element={<Cosmetics />} />
-            <Route path="lights" element={<Lights />} />
-            <Route path="textiles" element={<Textiles />} />
+      <SuccessMessageContext.Provider value={successMessage}>
+        <SuccessMessageContextSetter.Provider value={setSuccessMessage}>
+          <BrowserRouter>
+            <Routes>
+              <Route exact path="/" element={<HomeLinks  list={list} />}>
+                <Route path="electronics" element={<Electronics />} />
+                <Route path="decor" element={<Decorations />} />
+                <Route path="men" element={<Men />} />
+                <Route path="women" element={<Women />} />
+                <Route path="baby" element={<Baby />} />
+                <Route path="sports" element={<Sports />} />
+                <Route path="HomeProduct" element={<HomeProduct  />} />
+                <Route path="moreCat" element={<More />} />
+                <Route path="cosmetics" element={<Cosmetics />} />
+                <Route path="lights" element={<Lights />} />
+                <Route path="textiles" element={<Textiles />} />
 
-            <Route path="prod/:id" element={<Description />} />
-            <Route path="womDes/:id" element={<WomenDescription />} />
-            <Route path="sportsDes/:id" element={<SportsDescription />} />
-            <Route
-              path="HomeProductDes/:id"
-              element={<HomeProductDesription />}
-            />
-            <Route path="HomeDecorDes/:id" element={<HomeDecorDescription />} />
-            <Route path="ToysDes/:id" element={<ToysDescription />} />
-          </Route>
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/login" element={<SignIn />} />
-          <Route path="/signUp" element={<SignUp />} />
-          <Route path="/checkout" element={<Checkout />} />
-          <Route path="/payment" element={<Payment />} />
-          <Route path="/summary" element={<Summary />} />
+                <Route path="prod/:id" element={<Description />} />
+                <Route path="womDes/:id" element={<WomenDescription />} />
+                <Route path="sportsDes/:id" element={<SportsDescription />} />
+                <Route
+                  path="HomeProductDes/:id"
+                  element={<HomeProductDesription list={list} />}
+                />
+                <Route path="HomeDecorDes/:id" element={<HomeDecorDescription />} />
+                <Route path="ToysDes/:id" element={<ToysDescription />} />
+              </Route>
+              <Route path="/cart" element={<Cart />} />
+              <Route path="/login" element={<SignIn />} />
+              <Route path="/signUp" element={<SignUp />} />
+              <Route path="/checkout" element={<Checkout />} />
+              <Route path="/payment" element={<Payment />} />
+              <Route path="/summary" element={<Summary />} />
+              <Route path="/newProduct" element={<NewProduct />}/>
 
-          <Route exact path="/Dashbrd" element={<Dashbrd />} />
-          <Route exact path="/AdminDashbrd" element={<AdminDashboard />} />
-          <Route exact path="/product" element={<Product />} />
-          <Route exact path="/Order" element={<Order />} />
-          <Route exact path="/AddNewProduct" element={<AddNewProduct/>}/>
-          <Route exact path="/Dashboard" element={<Dashboard/>}/>
-          <Route exact path="/ContactUS" element={<ContactUS/>}/>
-          <Route exact path="/Message" element={<Message />}/>
-          <Route exact path="/Main" element={<Main />}/>
-          <Route exact path="/Modal" element={<Modal />}/>
-
-          
-        </Routes>
-      </BrowserRouter>
+              <Route exact path="/Dashbrd" element={<Dashbrd />} />
+              <Route exact path="/AdminDashbrd" element={<AdminDashboard />} />
+              <Route exact path="/product" element={<Product />} />
+              <Route exact path="/Order" element={<Order />} />
+              <Route exact path="/AddNewProduct" element={<AddNewProduct/>}/>
+              <Route exact path="/Dashboard" element={<Dashboard/>}/>
+              <Route exact path="/ContactUS" element={<ContactUS/>}/>
+              <Route exact path="/Message" element={<Message />}/>
+              <Route exact path="/Main" element={<Main />}/>
+              <Route exact path="/Modal" element={<Modal />}/>
+              
+            </Routes>
+          </BrowserRouter>
+        </SuccessMessageContextSetter.Provider>
+      </SuccessMessageContext.Provider>
     </>
   );
 }

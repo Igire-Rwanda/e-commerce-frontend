@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import "./signIn.css";
 import onlineshopping from "../images/pic-project.jpg";
 import { Link, useNavigate } from "react-router-dom";
@@ -6,9 +6,11 @@ import { useState } from "react";
 import axios from "axios";
 import { Button } from "@mui/material";
 import { TextField } from "@mui/material";
+import {SuccessMessageContext} from '../App';
 
 const SignIn = () => {
   const navigate = useNavigate();
+  const successMessage = useContext(SuccessMessageContext);
 
   const [user, setUser] = useState({
     email: "",
@@ -22,6 +24,11 @@ const SignIn = () => {
     });
   };
   const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
+
+  useEffect(()=> {
+    setSuccess(successMessage);
+  },[]);
 
   const changeInput = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
@@ -54,12 +61,43 @@ const SignIn = () => {
     }
   };
 
+  setTimeout(setSuccess({
+    message: '',
+    visible: false
+  }), 5000);
+
   return (
     <div className="signup-container">
       <div>{/* <img src={onlineshopping} alt="" id="picture" /> */}</div>
       <div className="container3">
         <div className="log-details">
           <h2 className="loginHeader">Signin</h2>
+          {success.visible && (
+            <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+              // width: '100%',
+            }}
+          >
+            <span
+              className="error-message"
+              style={{
+                border: "1px solid green",
+                color: "green",
+                textAlign: "center",
+                width: "80%",
+                marginLeft: "0p x !Important",
+                fontFamily: "roboto",
+                padding: "0.7rem",
+              }}
+            >
+              {success.message}
+            </span>
+          </div>
+          )}
+          
           {error && (
             <div
               style={{

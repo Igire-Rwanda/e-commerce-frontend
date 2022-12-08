@@ -4,20 +4,16 @@ import HomeProductCard from './HomeProductCard'
 import HomeProductList from '../data/HomeProductList';
 import allComponents from "../component/styles/allComponents.css";
 import {Outlet} from "react-router-dom";
+import axios from 'axios';
 
 
-const HomeProduct = () => {
-    const [list, setList] = useState([]);
-
-    useEffect(()=>{
-        setList(HomeProductList);
-    },[list])
-
+const HomeProduct = (props) => {
+console.log(props)
     return (
         <> 
         <div className='cards-box'>
-            {list.map((el, index) => 
-                <Link to={`/HomeProductDes/${el.id}`}>
+            {props?.list?.map((el, index) => 
+                <Link to={`/HomeProductDes/${el._id}`}>
                     <HomeProductCard key={index} item={el}/>
                 </Link>
                 )

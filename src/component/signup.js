@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./signIn.css";
 import onlineshopping from "../images/pic-project.jpg";
 import { Link, useNavigate } from "react-router-dom";
@@ -7,9 +7,11 @@ import axios from "axios";
 import { Button } from "@mui/material";
 import { TextField } from "@mui/material";
 import { useForm } from "react-hook-form";
+import {SuccessMessageContextSetter} from '../App';
 
 const SignUp = () => {
     const navigate = useNavigate(); 
+    const successMessageSetter = useContext(SuccessMessageContextSetter);
     const {register,handleSubmit,formState:{errors}} = useForm();
     console.log(errors);
 
@@ -64,8 +66,11 @@ const SignUp = () => {
             axios.post("http://localhost:4000/users", user)
             .then(response=>{
                 if (response.data.message !== 'Error') {
-                    console.log(response.data);
                     clearInputs();
+                    successMessageSetter({
+                        message: 'Account Successfully Created',
+                        visible: true
+                    })
                     navigate("/login");
                 } else {
                     setError("Failed to save.   ");    
@@ -214,8 +219,7 @@ const SignUp = () => {
                                 }}
                                 variant="contained"
                             >
-                                 <Link to="/Dashbrd" className="par-links"> Sign Up</Link>
-                           
+                            Sign Up
                             </Button>
                         </div>
                         <div className="signUppar">

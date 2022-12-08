@@ -9,15 +9,15 @@ import HomeLinks from "../component/HomeLinks";
 import { Outlet } from "react-router-dom";
 import HomeProduct from "../component/HomeProduct";
 
-const Home=()=>{
+const Home=(props)=>{
 
     return(
         <>
             <h1 className="home-h1">OUR PRODUCTS:</h1>
-            <HomeProduct /> 
+            <HomeProduct {...props} /> 
             <Offer/>
             <h1 className="home-h1">OUR FEATURES PRODUCTS:</h1>
-            <HomeProduct /> 
+            <HomeProduct {...props} /> 
         </>
     )
 }

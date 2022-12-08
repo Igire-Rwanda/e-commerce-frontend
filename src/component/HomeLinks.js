@@ -7,7 +7,7 @@ import Header from "../component/header";
 import Footer from "./footer";
 import "../component/styles/homelinks.css";
 
-const HomeLinks = () => {
+const HomeLinks = (props) => {
   const params = useParams();
   const [showMoreCategories, setShowMoreCategories] = useState(false);
   useEffect(() => {
@@ -149,7 +149,7 @@ const HomeLinks = () => {
             {window.location.pathname === "/" ? (
               <>
                 {" "}
-                <div className="cart-image"></div> <Home />
+                <div className="cart-image"></div> <Home {...props} />
               </>
             ) : (
               <Outlet />
