@@ -106,7 +106,7 @@ const SignIn = () => {
                   height: 30,
                 },
               }}
-            />
+             required/>
           </div>
           <div className="text-input">
             <TextField
@@ -128,7 +128,7 @@ const SignIn = () => {
                   height: 30,
                 },
               }}
-            />
+              required/>
           </div>
           <div className="btn">
             <Button

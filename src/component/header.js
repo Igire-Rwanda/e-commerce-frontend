@@ -71,22 +71,37 @@ const Header = () => {
         <section className="Head">
           <div className="header-container d-flex">
             <div className="right row RText">
+
+              <label style={{fontSize:"16px"}}>Theme FQ's</label>
+              <label style={{fontSize:"16px"}}>Need helps</label>
+              <span></span>
+              <label htmlFor="" style={{fontSize:"16px"}}>EN</label>
+
               <label style={{ fontSize: "16px" }}>Welcome</label>
               <label style={{ fontSize: "16px" }}>Need helps</label>
               <span></span>
               <label htmlFor="" style={{ fontSize: "16px" }}>
                 EN
               </label>
+
               <span></span>
               <label htmlFor="">USD</label>
             </div>
             <div style={{ color: "white" }}>
+
+              <label style={{fontSize:"16px"}}>Home</label>
+              <label style={{fontSize:"16px"}}>Shipping</label>
+              {/* <label>ContactUs</label> */}
+              <Link to="/ContactUS" style={{fontSize:"16px"}}>Contact Us</Link>
+             
+
               <label style={{ fontSize: "16px" }}>Home</label>
               <label style={{ fontSize: "16px" }}>Shipping</label>
               {/* <label>ContactUs</label> */}
               <Link to="/ContactUS" style={{ fontSize: "16px" }}>
                 Contact Us
               </Link>
+
             </div>
             <Link to="/About" style={{ fontSize: "16px" }}>
               AboutUs
