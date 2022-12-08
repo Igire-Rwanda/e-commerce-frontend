@@ -37,6 +37,7 @@ import Message from "./component/Message";
 import Main from "./component/Main";
 import Modal from "./component/Modal";
 
+
 function App() {
   return (
     <>
@@ -84,6 +85,7 @@ function App() {
           <Route exact path="/Message" element={<Message />} />
           <Route exact path="/Main" element={<Main />} />
           <Route exact path="/Modal" element={<Modal />} />
+          
         </Routes>
       </BrowserRouter>
     </>

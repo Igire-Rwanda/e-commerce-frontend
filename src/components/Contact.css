@@ -3,7 +3,7 @@
     width: 100%;
     background-color: black;
     height: 27vh;
-    margin-top: 0px;
+
 }
 
 .title{
@@ -11,7 +11,13 @@
     font-weight: bolder;
     font-size: 30px;
     color: darkgoldenrod;
-    padding-top: 25px;
+    padding-top: 10px;
+}
+.ihg{
+    background-image: url(../assets/image/salesss.avif);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .text{
