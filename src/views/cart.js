@@ -28,7 +28,7 @@ const Cart = () => {
                 <tr key={index}>
                   <td className="image">
                     <div className="photo">
-                      <img src={item.image} />{" "}
+                      <img src={item.image} />
                     </div>
                   </td>
                   <div className="name">
@@ -36,7 +36,7 @@ const Cart = () => {
                   </div>
 
                   <div>
-                    <td className="price">{item.price}</td>
+                    <td className="price">Rwf. {item.price}</td>
                   </div>
 
                   <div className="table2">
@@ -76,7 +76,7 @@ const Cart = () => {
         {!isEmpty && (
           <Row>
             <Col>
-              <h4 className="total">Total Price: Rwf .{price}</h4>
+              <h4 className="total">Total Price: Rwf. {cartTotal}</h4>
             </Col>
             <Col>
               <Button className="cart" onClick={() => emptyCart()}>

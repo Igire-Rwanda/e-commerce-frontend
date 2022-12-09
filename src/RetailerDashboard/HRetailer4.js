@@ -1,4 +1,3 @@
-
 import Card from "@mui/material/Card/Card";
 import CardContent from "@mui/material/CardContent/CardContent";
 import Typography from "@mui/material/Typography/Typography";
@@ -6,15 +5,15 @@ import Box from "@mui/system/Box/Box";
 
 
 const cardSizeCSS = {
-  width: "300px",
-  height: "210px",
+  width: "230px",
+  height: "80px",
   p: "16px",
   position: "relative",
 };
 
-export default function Head1({ style }) {
+export default function RetailerHead4({ style }) {
   return (
-    <Card sx={{ borderRadius: "30px", ...cardSizeCSS, ...style, p: "auto",height:"20vh",gap:"2rem" }}>
+    <Card sx={{  ...cardSizeCSS, ...style, p: "auto",height:"14vh",gap:"2rem",backround:"gray" }}>
       <CardContent sx={cardSizeCSS}>
         <Typography
           sx={{
@@ -22,26 +21,23 @@ export default function Head1({ style }) {
             fontWeight: 200,
             color: "black",
             marginBottom: "32px",
-            lineHeight: "15px",
+            lineHeight: "10px",position:"relative",left:"6rem"
           }}
         >
-          Sales Categories
+          Total Customers
+          
         </Typography>
         <Box sx={{ display: "flex", mb: "32px" }}>
           <Typography
             variant="h6"
             component="span"
-            sx={{ fontSize: "14px", lineHeight: "24px", fontWeight: 400,paddingLeft:"25rem" }}
+            sx={{ fontSize: "14px", lineHeight: "24px", fontWeight: 400,color:"black",position:"relative",left:"6rem" }}
           >
-            $300
+            $10000
           </Typography>
         </Box>
 
-        <Typography
-          sx={{ fontSize: "14px", color: "rgba(0, 0, 0)",position:"relative",bottom:"3rem"}}
-        >
-          30 Members
-        </Typography>
+       
         <Box
           sx={{
             width: "120px",

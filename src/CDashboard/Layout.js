@@ -11,7 +11,7 @@ const Comp = (props) => {
         </Grid>
         <Grid item spacing={2} xs={12} sm={9}>
           <Header />
-          <Box sx={{ width: "100%", minHeight: '100vh', background: "whiteSmoke", padding: 0.5, paddingTop: "25%" }}>{props.children}</Box>
+          <Box sx={{ width: "100%", minHeight: '100vh', background: "whiteSmoke", padding: 0.5, paddingTop: "5%" }}>{props.children}</Box>
         </Grid>
       </Grid>
     </Box>

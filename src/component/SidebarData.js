@@ -26,5 +26,17 @@ export const SidebarData =[
         
         cName:'nav-text'
     },
+    {
+        title:'PurchaseProduct',
+        path:'/Purchase',
+        
+        cName:'nav-text'
+    },
+    {
+        title:'YR',
+        path:'/orders',
+        
+        cName:'nav-text'
+    },
 
 ]

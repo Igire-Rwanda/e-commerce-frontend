@@ -26,6 +26,8 @@ import Textiles from "./component/Textiles";
 import SignIn from "./component/signIn";
 import SignUp from "./component/signup";
 import Cart from "./views/cart";
+import Purchase from "../src/RetailerDashboard/RetailerDashbord";
+import Orders from "../src/RetailerDashboard/RetailerDashbord"
 
 function App() {
   return (
@@ -64,6 +66,8 @@ function App() {
 
           <Route exact path="/product" element={<Product />} />
           <Route exact path="/order" element={<Order />} />
+          <Route exact path="/Purchase" element={<Purchase/>}/>
+          <Route exact path="/orders" element={<Orders/>}/>
         </Routes>
       </BrowserRouter>
     </>
